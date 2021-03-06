@@ -16,4 +16,11 @@ Once kitty is installed copy the **kitty.conf** contents into your config folder
 
 <br> 
 
-### This config is huge just tell me how to use the shortcuts! 😠
+### This config is huge just tell me how to use the shortcuts 😠 !!
+
+Here are the shortcuts that you will probably be using the most :
+
+#### Window Commands
+
+>* Ctrl+Shift+Enter : *Open a new window (same directory as the parent window)*
+>* Ctrl+Shift+W : *Close the focused window*
