@@ -1,0 +1,329 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
+[colors]
+;background = ${xrdb:color0:#222}
+background = #222
+background-alt = #FD7272
+;foreground = ${xrdb:color7:#222}
+foreground = #dfdfdf
+foreground-alt = #555
+primary = #ffb52a
+secondary = #e60053
+alert = #bd2c40
+
+orchid_orange = #FEA47F
+disco_ball = #25CCF7
+honey_glow = #EAB543
+sweet_garden = #55E6C1
+falling_star = #CAD3C8
+rich_gardenia = #F97F51
+clear_chill = #1B9CFC
+white_pepper = #F8EFBA
+keppel = #58B19F
+ships_officer = #2C3A47
+fiery_fuchsia = #B33771
+blueball = #3B3B98
+peach = #FD7272
+oasis = #9AECDB
+brightbue = #D6A2E8
+megenta_purple = #6D214F
+ending_navy = #182C61
+socks = #FC427B
+pine_glade = #BDC581
+lavender = #82589F
+
+[bar/example]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+height = 30
+#offset-x = 30
+#offset-y = 0
+#radius = 6
+fixed-center = true
+#override-redirect = true
+
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 0
+border-color = #00000000
+
+padding-left = 3
+padding-right = 3
+
+
+module-margin-left = 1.5
+module-margin-right = 1.5
+
+font-0 = fixed:pixelsize=10;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = siji:pixelsize=10;1
+
+font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=15;2"
+font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=15;2"
+font-5 = "Font Awesome 5 Brands:pixelsize=12;2"
+font-6 = "Hack Nerd Font Mono:style=Regualar:pixelsize=18;1"
+
+
+modules-left =  date i3 
+modules-center = xwindow
+modules-right = cpu memory  
+
+;incase you need volume slider make tray-position right
+tray-position = none
+tray-padding = 2
+;tray-background = #0063ff
+
+;wm-restack = bspwm
+;wm-restack = i3
+
+
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/xwindow]
+type = internal/xwindow
+format = <label>
+
+format-foreground = #707880
+format-padding = 4
+
+
+label = %title%
+label-maxlen = 150
+
+
+label-empty = 
+label-empty-foreground = #707880
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+format-prefix = " "
+format-prefix-foreground = ${colors.disco_ball}
+format-prefix-underline = ${colors.secondary}
+label-layout = %layout%
+label-layout-underline = ${colors.secondary}
+;format-padding = 2
+
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-background = ${colors.secondary}
+label-indicator-underline = ${colors.secondary}
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+
+label-mounted =  %free%
+label-unmounted = %mountpoint% not mounted
+label-mounted-foreground = ${colors.honey_glow}
+label-indicator-underline = #f50a4d
+
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+
+; Only show workspaces on the same output as the bar
+;pin-workspaces = true
+; all work space icons are nerdfont hack  icons
+ws-icon-0 =1;
+ws-icon-1 =2;
+ws-icon-2 =3;
+ws-icon-3 =4; 
+ws-icon-4 =5;
+ws-icon-5 =6; 
+ws-icon-6 =7;
+ws-icon-7 =8;
+
+label-mode-padding = 2
+label-mode-foreground = #000
+label-mode-background = ${colors.primary}
+
+; focused = Active workspace on focused monitor
+label-focused = %icon%
+label-focused-background = ${colors.peach}
+label-focused-foreground = ${colors.ships_officer}
+label-focused-underline= ${colors.white_pepper}
+label-focused-padding = 3
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %icon%
+label-unfocused-padding = 3
+label-unfocused-background = ${colors.disco_ball}
+label-unfocused-foreground = ${colors.ending_navy}
+label-unfocused-underline= ${colors.oasis}
+
+; visible = Active workspace on unfocused monitor
+label-visible = %icon%
+label-visible-padding = 3
+label-visible-background = ${colors.disco_ball}
+label-visible-foreground = ${colors.ending_navy}
+label-visible-underline= ${colors.oasis}
+
+; urgent = Workspace with urgency hint set
+label-urgent = %icon%
+label-urgent-background = ${colors.megenta_purple}
+label-urgent-foreground = ${colors.pine_glade}
+label-urgent-padding = 3
+label-urgent-underline= ${colors.honey_glow}
+
+; Separator in between workspaces
+; label-separator = |
+
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.rich_gardenia}
+format-underline = #f90000
+;format-padding=2
+label = %percentage:2%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.orchid_orange}
+format-underline = #4bffdc
+;format-padding = 2
+
+
+label = %percentage_used%%
+
+[module/wlan]
+type = internal/network
+interface = net1
+interval = 3.0
+
+format-connected = <ramp-signal> <label-connected>
+format-connected-underline = #9f78e1
+label-connected = %essid%
+
+format-disconnected =
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-foreground = ${colors.foreground-alt}
+
+[module/eth]
+type = internal/network
+interface = vboxnet0
+interval = 3.0
+
+format-connected-underline = #55aa55
+format-connected-prefix = "  "
+label-visible-underline= ${colors.oasis}
+label-connected = %local_ip%
+
+format-disconnected =
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+[module/date]
+type = internal/date
+interval = 1
+;format-padding =2
+date = 
+date-alt = " %Y-%m-%d"
+
+time = %H:%M
+time-alt = %H:%M:%S
+
+format-prefix = 
+format-prefix-foreground = #ffffff
+format-underline = #0a6cf5
+
+
+label = %time% %date%
+
+
+
+[module/powermenu]
+type = custom/menu
+
+expand-right = true
+
+format-spacing = 1
+format-padding = 2
+label-open = 
+label-open-foreground = ${colors.secondary}
+label-close = cancel
+label-close-foreground = ${colors.secondary}
+label-separator = |
+label-separator-foreground = ${colors.foreground-alt}
+
+menu-0-0 = reboot
+menu-0-0-exec = systemctl reboot
+menu-0-1 = power off
+menu-0-1-exec = systemctl poweroff   
+
+
+
+[module/updates]
+type = custom/script
+exec = ~/.config/polybar/scripts/updates.sh
+interval = 300
+
+
+
+
+
+
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+; vim:ft=dosini

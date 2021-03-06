@@ -1,0 +1,112 @@
+window:
+  dimensions:
+    columns: 140
+    lines: 38
+
+  #position:
+  #  x: 0
+  #  y: 0
+
+  padding:
+    x: 10
+    y: 10
+
+  dynamic_padding: true
+
+  # Window decorations
+  decorations: none 
+
+  # Startup Mode (changes require restart)
+  startup_mode: Windowed
+
+  # Window title
+  title: alacritty
+  dynamic_title: true
+
+  # Window class (Linux/BSD only):
+class:
+  instance: alacritty
+  general: alacritty
+
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+# Background opacity
+background_opacity: 1
+
+# Font configuration
+
+font:
+
+  normal:
+    family: "Hack Nerd Font"
+    style: Regular
+
+  bold:
+    family: "Hack Nerd Font"
+    style: Bold
+
+  italic:
+    family: "Hack Nerd Font"
+    style: Italic
+
+  bold_italic:
+    family: "Hack Nerd Font"
+    style: Bold Italic
+
+  size: 10.0
+
+  #offset:
+  #  x: 0
+  #  y: 0
+
+  #glyph_offset:
+  #  x: 0
+  #  y: 0
+  
+colors:
+  # Default colors
+  primary:
+    background: "#1e2127"
+    # background: "#2E3440"
+    foreground: "#D8DEE9"
+
+  # Normal colors
+  normal:
+    black: "#3B4252"
+    red: "#BF616A"
+    green: "#A3BE8C"
+    yellow: "#EBCB8B"
+    blue: "#81A1C1"
+    magenta: "#B48EAD"
+    cyan: "#88C0D0"
+    white: "#abb2bf"
+
+  # Bright colors
+  bright:
+    black: "#5c6370"
+    red: "#e06c75"
+    green: "#98c379"
+    yellow: "#d19a66"
+    blue: "#61afef"
+    magenta: "#c678dd"
+    cyan: "#56b6c2"
+    white: "#ECEFF4"
+
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: false
+
+cursor:
+  style: Block
+
+live_config_reload: true
+
+working_directory: None
+
+
+ 
+
