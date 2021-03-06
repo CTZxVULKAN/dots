@@ -11,5 +11,7 @@
 Once kitty is installed copy the **kitty.conf** contents into your config folder.
 
 >* The config folder is generally located in **~/.config** usless your distro is wierdly configured.
->* Kitty will look for its config in the **.config/kitty/kitty.conf**. 
+>* Kitty will look for its config in the **.config/kitty/kitty.conf** file. 
 >* The config directory is **hidden** by default and you need to create the **kitty folder** in it with the file **kitty.conf**.
+
+### This config is huge just tell me how to use the shortcuts!
