@@ -30,3 +30,9 @@ Here are the shortcuts that you will probably be using the most :
 #### Tab Commands
 >* Ctrl+Shift+T : *Open a new tab (opens in home directory)*
 >* Ctrl+Shift+Q : *Close the focused tab (Closes kitty if no tabs are present)*
+
+#### Other handy shortcuts
+>* Ctrl+Shift+Mouse Click : *Opens a url in the configured browser (firefox in this case)*
+>* Ctrl+Shift+Equal : *Increase font size*
+>* Ctrl+Shift+Minus : *Derease font size*
+>* Ctrl+Shift+Backspace : *Restore original font size*
