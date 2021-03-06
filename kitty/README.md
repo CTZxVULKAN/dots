@@ -28,3 +28,5 @@ Here are the shortcuts that you will probably be using the most :
 >* Ctrl+Shift+Q : *Close the focused instance*
 
 #### Tab Commands
+>* Ctrl+Shift+T : *Open a new tab (opens in home directory)*
+>* Ctrl+Shift+Q : *Close the focused tab (Closes kitty if no tabs are present)*
