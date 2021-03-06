@@ -4,3 +4,4 @@
 
 
 ![screenshot1](./screenshots/kitty1.png)
+![screenshot2](./screenshots/kitty2.png)
