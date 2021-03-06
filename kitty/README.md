@@ -6,7 +6,7 @@
 ![screenshot1](./screenshots/kitty1.png)
 ![screenshot2](./screenshots/kitty2.png)
 
-### How do I use this config?
+### How do I use this config 🤔 ?
 
 Once kitty is installed copy the **kitty.conf** contents into your config folder.
 
@@ -14,4 +14,6 @@ Once kitty is installed copy the **kitty.conf** contents into your config folder
 >* Kitty will look for its config in the **.config/kitty/kitty.conf** file. 
 >* The config directory is **hidden** by default and you need to create the **kitty folder** in it with the file **kitty.conf**.
 
-### This config is huge just tell me how to use the shortcuts!
+<br> 
+
+### This config is huge just tell me how to use the shortcuts! 😠
