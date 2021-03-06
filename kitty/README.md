@@ -38,4 +38,4 @@ Here are the shortcuts that you will probably be using the most :
 >* Ctrl+Shift+Backspace : *Restore original font size*
 
 <br>
-Thats it if you need any more help visit the official ![kitty website](https://sw.kovidgoyal.net/kitty/#) . Their documentaion is good and they also offer a sample config.
+Thats it if you need any more help visit the official [kitty website](https://sw.kovidgoyal.net/kitty/#) . Their documentaion is good and they also offer a sample config.
