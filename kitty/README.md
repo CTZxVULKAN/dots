@@ -7,3 +7,7 @@
 ![screenshot2](./screenshots/kitty2.png)
 
 ### How do I use this config?
+
+Once kitty is installed copy the kitty.conf contents into your config folder.
+
+>* Kitty will look for its config in the .config/kitty folder. 
