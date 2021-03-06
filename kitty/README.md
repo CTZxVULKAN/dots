@@ -10,4 +10,6 @@
 
 Once kitty is installed copy the kitty.conf contents into your config folder.
 
->* Kitty will look for its config in the .config/kitty folder. 
+>* The config folder is generally located in <mark> ~/.config<mark/>  usless your distro is wierdly configured.
+>* Kitty will look for its config in the .config/kitty/kitty.conf. 
+>
