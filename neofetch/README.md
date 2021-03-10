@@ -1,1 +1,3 @@
-![screenshot1](./screenshots/neofetch.png)
+## Neofetch
+
+![screenshot1](./screenshots/neofetch1.png)
