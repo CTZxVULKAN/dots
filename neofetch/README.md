@@ -11,3 +11,5 @@ Once neofetch is installed copy the **config.conf** contents into your neofetch 
 >* The config directory is **hidden** by default and you might need to create the **neofetch folder** in it with the file **config.conf**.
 
 <br> 
+
+### Troubles with displaying image 😰 ?
