@@ -27,4 +27,11 @@ to
 image_sourcr="/home/your_path"
 ```
 >* The most possible issue might be your terminal cannot display the image properly. If needed change the terminal.
-Urxvt is among one of the terminals which is really good at handling images with w3m.
+**Urxvt** is among one of the terminals which is really good at handling images with w3m.
+If you do not want to switch terminals you can use this.
+
+
+``` html
+image_loop="on"
+``` 
+By default this is set to **off** in the config but on setting this on the image is continously rendered in the terminal. This will **fix** the issue but there might be stutterings.
