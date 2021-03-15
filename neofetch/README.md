@@ -35,3 +35,13 @@ If you do not want to switch terminals you can use this.
 image_loop="on"
 ``` 
 > By default this is set to **off** in the config but on setting this on the image is continously rendered in the terminal. This will **fix** the issue but there might be stutterings.
+
+<br>
+
+### I dont want this just give me the cool ascii art 😤 !
+>* Just set the image backend to ascii in the config if you want the cool ascii art
+
+``` html
+image_backend="ascii"
+```
+>* This will display the ascii art for your disto
