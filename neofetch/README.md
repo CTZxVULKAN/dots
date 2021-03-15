@@ -17,8 +17,12 @@ Once neofetch is installed copy the **config.conf** contents into your neofetch 
 >* Change the path of the image. The neofetch config provided here contains the path of the image used by me which doesnot exist in your system.
 
 Make sure to change 
-image_source="/home/jishnu/.config/neofetch/artix.png"
 
+``` html
+image_source="/home/jishnu/.config/neofetch/artix.png"
+```
 to 
 
-image+sourcr="/home/path"
+```html
+image+sourcr="/home/your_path"
+```
