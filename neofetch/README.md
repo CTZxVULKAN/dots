@@ -13,3 +13,4 @@ Once neofetch is installed copy the **config.conf** contents into your neofetch 
 <br> 
 
 ### Troubles with displaying image 😰 ?
+>* Make sure that w3m is installed in your system. w3m is essential as it serves as a backend to display the image. 
