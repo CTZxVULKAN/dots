@@ -28,7 +28,7 @@ image_source="/home/jishnu/.config/neofetch/artix.png"
 to 
 
 ```html
-image_sourcr="/home/your_path"
+image_source="/home/your_path"
 ```
 >* The most possible issue might be your terminal cannot display the image properly. If needed change the terminal.
 **Urxvt** is among one of the terminals which is really good at handling images with w3m.
