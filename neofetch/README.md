@@ -1,5 +1,9 @@
 ## Neofetch
 
+> Neofetch is a command line tool that displays information about your operating system in a visually pleasing way. 
+> The overall purpose of Neofetch is to be used in screen-shots of your system. Neofetch shows the information other people want to see. There are also other tools available for proper system statistic/diagnostics.
+> The following config contiains my customized version of neofetch
+
 ![screenshot1](./screenshots/neofetch1.png)
 
 ### How do I use this config 🤔 ?
@@ -45,3 +49,7 @@ image_loop="on"
 image_backend="ascii"
 ```
 >* This will display the ascii art for your disto
+
+<br>
+
+Thats it if you need any more you should check out the default config. The config is very well documented and has many more features than what has been used here.
