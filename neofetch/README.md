@@ -56,5 +56,7 @@ Thats it if you need any more you should check out the default config. The confi
 
 <br>
 
-##Related Repos 
-https://github.com/dylanaraps/neofetch
+## Related Repos 🥳
+
+>* [Neofetch Github](https://github.com/dylanaraps/neofetch)
+
