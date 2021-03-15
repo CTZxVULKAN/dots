@@ -53,3 +53,8 @@ image_backend="ascii"
 <br>
 
 Thats it if you need any more you should check out the default config. The config is very well documented and has many more features than what has been used here.
+
+<br>
+
+##Related Repos 
+https://github.com/dylanaraps/neofetch
