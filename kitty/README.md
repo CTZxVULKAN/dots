@@ -41,3 +41,9 @@ Here are the shortcuts that you will probably be using the most :
 Thats it if you need any more help visit the official kitty website. They offer a sample config which might help you.
 
 >* [kitty website](https://sw.kovidgoyal.net/kitty/)
+
+<br>
+
+## Related Repos 🥳
+
+>* [Kitty Github](https://github.com/kovidgoyal/kitty)
