@@ -13,7 +13,7 @@ Once neofetch is installed copy the **config.conf** contents into your neofetch 
 <br> 
 
 ### Troubles with displaying image 😰 ?
->* Make sure that w3m is installed in your system. w3m is essential as it serves as a backend to display the image. 
+>* Make sure that **w3m** is installed in your system. w3m is essential as it serves as a backend to display the image. 
 >* Change the path of the image. The neofetch config provided here contains the path of the image used by me which doesnot exist in your system.
 
 Make sure to change 
@@ -26,3 +26,5 @@ to
 ```html
 image_sourcr="/home/your_path"
 ```
+>* The most possible issue might be your terminal cannot display the image properly. If needed change the terminal.
+Urxvt is among one of the terminals which is really good at handling images with w3m.
