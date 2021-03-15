@@ -24,5 +24,5 @@ image_source="/home/jishnu/.config/neofetch/artix.png"
 to 
 
 ```html
-image+sourcr="/home/your_path"
+image_sourcr="/home/your_path"
 ```
