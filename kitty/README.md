@@ -8,9 +8,9 @@
 
 ### How do I use this config 🤔 ?
 
-Once kitty is installed copy the **kitty.conf** contents into your config folder.
+Once kitty is installed copy the **kitty.conf** contents into your kitty config folder.
 
->* The config folder is generally located in **~/.config** usless your distro is wierdly configured.
+>* The config folder is generally located in **~/.config** unless your distro is wierdly configured.
 >* Kitty will look for its config in the **.config/kitty/kitty.conf** file. 
 >* The config directory is **hidden** by default and you need to create the **kitty folder** in it with the file **kitty.conf**.
 
