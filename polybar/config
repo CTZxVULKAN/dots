@@ -1,26 +1,9 @@
-;==========================================================
-;
-;
-;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
-;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
-;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
-;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
-;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
-;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
-;
-;
-;   To learn more about how to configure Polybar
-;   go to https://github.com/polybar/polybar
-;
-;   The README contains a lot of information
-;
-;==========================================================
-
+;yay -S ttf-fira-code
+;yay -S nerd-fonts-complete
 [colors]
-;background = ${xrdb:color0:#222}
-background = #222
+
+background = #1e2127
 background-alt = #FD7272
-;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #555
 primary = #ffb52a
@@ -48,110 +31,110 @@ socks = #FC427B
 pine_glade = #BDC581
 lavender = #82589F
 
-[bar/example]
-;monitor = ${env:MONITOR:HDMI-1}
-width = 100%
-height = 30
-#offset-x = 30
-#offset-y = 0
-#radius = 6
+[bar/polybari3]
+width = 90%
+height = 35
+;offset-x = 10%
+;offset-y = 10%
+radius = 3
 fixed-center = true
-#override-redirect = true
-
+;override-redirect = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 3
-line-color = #f00
-
-border-size = 0
+border-size = 6
 border-color = #00000000
 
-padding-left = 3
-padding-right = 3
-
-
-module-margin-left = 1.5
-module-margin-right = 1.5
-
-font-0 = fixed:pixelsize=10;1
+font-0 = fixed:pixelsize=10;2
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
-
-font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=15;2"
-font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=15;2"
-font-5 = "Font Awesome 5 Brands:pixelsize=12;2"
-font-6 = "Hack Nerd Font Mono:style=Regualar:pixelsize=18;1"
+font-2 = siji:pixelsize=10;2
 
 
-modules-left =  date i3 
-modules-center = xwindow
-modules-right = cpu memory  
-
-;incase you need volume slider make tray-position right
-tray-position = none
-tray-padding = 2
-;tray-background = #0063ff
-
-;wm-restack = bspwm
-;wm-restack = i3
+font-3 = "Hack Nerd Font Mono:style=Regualar:pixelsize=18;4"
+font-4 = Fira Code Nerd Font:style=Medium:size=12;2
+font-5 = Fira Code Nerd Font:style=Medium:size=6;2
+font-6 = Fira Code Nerd Font:style=Medium:size=3;2
 
 
+font-7 = "Font Awesome 5 Free:style=Regular:pixelsize=15;2"
+font-8 = "Font Awesome 5 Free:style=Solid:pixelsize=15;2"
+font-9 = "Font Awesome 5 Brands:pixelsize=12;2
 
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
+modules-left = menu i3 xwindow
+modules-center= 
+modules-right=date
 
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
+#systray
+;tray-detatched=true
+;tray-position=right
 
-cursor-click = pointer
-cursor-scroll = ns-resize
+wm-restack = i3
+
+[bar/polybarstatus]
+width=10%
+height=35
+   
+override-redirect=true
+offset-x=90%
+border-size = 6
+border-color = #00000000
+
+radius = 3
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+font-0 = fixed:pixelsize=10;2
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = siji:pixelsize=10;2
+
+
+font-3 = "Hack Nerd Font Mono:style=Regualar:pixelsize=18;4"
+font-4 = Fira Code Nerd Font:style=Medium:size=12;2
+font-5 = Fira Code Nerd Font:style=Medium:size=6;2
+font-6 = Fira Code Nerd Font:style=Medium:size=3;2
+
+
+font-7 = "Font Awesome 5 Free:style=Regular:pixelsize=15;2"
+font-8 = "Font Awesome 5 Free:style=Solid:pixelsize=15;2"
+font-9 = "Font Awesome 5 Brands:pixelsize=12;2
+
+
+modules-left =  
+modules-center = volume bluetooth eth 
+modules-right =
+
+wm-restack = i3
+
+
+
+
+[module/eth]
+type = internal/network
+interface = eth0
+interval = 3.0
+
+label-connected =  
+label-disconnected = 
+
+label-disconnected-foreground =  #707880
+label-connected-padding-right = 3
+label-disconnected-padding-right = 3
 
 [module/xwindow]
 type = internal/xwindow
-format = <label>
-
+label = %title:0:70:...%
+label-padding = 3
+label-maxlen = 35
 format-foreground = #707880
-format-padding = 4
-
-
-label = %title%
-label-maxlen = 150
-
-
-label-empty = 
-label-empty-foreground = #707880
-
-[module/xkeyboard]
-type = internal/xkeyboard
-blacklist-0 = num lock
-
-format-prefix = " "
-format-prefix-foreground = ${colors.disco_ball}
-format-prefix-underline = ${colors.secondary}
-label-layout = %layout%
-label-layout-underline = ${colors.secondary}
-;format-padding = 2
-
-label-indicator-padding = 2
-label-indicator-margin = 1
-label-indicator-background = ${colors.secondary}
-label-indicator-underline = ${colors.secondary}
-
-[module/filesystem]
-type = internal/fs
-interval = 25
-
-mount-0 = /
-
-label-mounted =  %free%
-label-unmounted = %mountpoint% not mounted
-label-mounted-foreground = ${colors.honey_glow}
-label-indicator-underline = #f50a4d
-
+label-empty-padding =3
+label-empty = Desktop
+label-empty-maxlen = 35
 
 [module/i3]
+
 type = internal/i3
 format = <label-state> <label-mode>
 index-sort = true
@@ -160,9 +143,10 @@ wrapping-scroll = false
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
 ; all work space icons are nerdfont hack  icons
-ws-icon-0 =1;
-ws-icon-1 =2;
-ws-icon-2 =3;
+
+ws-icon-0 =1; 
+ws-icon-1 =2; 
+ws-icon-2 =3; 
 ws-icon-3 =4; 
 ws-icon-4 =5;
 ws-icon-5 =6; 
@@ -177,7 +161,6 @@ label-mode-background = ${colors.primary}
 label-focused = %icon%
 label-focused-background = ${colors.peach}
 label-focused-foreground = ${colors.ships_officer}
-label-focused-underline= ${colors.white_pepper}
 label-focused-padding = 3
 
 ; unfocused = Inactive workspace on any monitor
@@ -185,134 +168,82 @@ label-unfocused = %icon%
 label-unfocused-padding = 3
 label-unfocused-background = ${colors.disco_ball}
 label-unfocused-foreground = ${colors.ending_navy}
-label-unfocused-underline= ${colors.oasis}
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %icon%
 label-visible-padding = 3
 label-visible-background = ${colors.disco_ball}
 label-visible-foreground = ${colors.ending_navy}
-label-visible-underline= ${colors.oasis}
 
 ; urgent = Workspace with urgency hint set
 label-urgent = %icon%
 label-urgent-background = ${colors.megenta_purple}
 label-urgent-foreground = ${colors.pine_glade}
 label-urgent-padding = 3
-label-urgent-underline= ${colors.honey_glow}
 
 ; Separator in between workspaces
 ; label-separator = |
 
-
-[module/cpu]
-type = internal/cpu
-interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.rich_gardenia}
-format-underline = #f90000
-;format-padding=2
-label = %percentage:2%%
-
-[module/memory]
-type = internal/memory
-interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.orchid_orange}
-format-underline = #4bffdc
-;format-padding = 2
-
-
-label = %percentage_used%%
-
-[module/wlan]
-type = internal/network
-interface = net1
-interval = 3.0
-
-format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #9f78e1
-label-connected = %essid%
-
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
-
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
-ramp-signal-foreground = ${colors.foreground-alt}
-
-[module/eth]
-type = internal/network
-interface = vboxnet0
-interval = 3.0
-
-format-connected-underline = #55aa55
-format-connected-prefix = "  "
-label-visible-underline= ${colors.oasis}
-label-connected = %local_ip%
-
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
-
 [module/date]
 type = internal/date
 interval = 1
-;format-padding =2
-date = 
-date-alt = " %Y-%m-%d"
 
-time = %H:%M
-time-alt = %H:%M:%S
+date = "%d/%m -"
+date-alt = "%d/%m -"
 
-format-prefix = 
-format-prefix-foreground = #ffffff
-format-underline = #0a6cf5
+time = %l:%M
+time-alt = %l:%M
 
+label = %date% %time%
+label-padding = 3
 
-label = %time% %date%
+[module/volume]
+type = internal/volume
+format-volume = <label-volume>
+;label-volume =  %percentage%%
+label-volume =  
+label-volume-padding = 3
 
+label-muted =    
+label-muted-padding = ${self.label-volume-padding}
+label-muted-foreground =  #707880
 
-
-[module/powermenu]
-type = custom/menu
-
-expand-right = true
-
-format-spacing = 1
-format-padding = 2
-label-open = 
-label-open-foreground = ${colors.secondary}
-label-close = cancel
-label-close-foreground = ${colors.secondary}
-label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
-
-menu-0-0 = reboot
-menu-0-0-exec = systemctl reboot
-menu-0-1 = power off
-menu-0-1-exec = systemctl poweroff   
-
-
-
-[module/updates]
+[module/bluetooth]
 type = custom/script
-exec = ~/.config/polybar/scripts/updates.sh
-interval = 300
+exec = ~/.config/polybar/scripts/bluetooth.sh
+interval = 2
+;click-left = exec blueberry
+;click-right = exec path/to/scripts/config/polybar/toggle_bluetooth.sh
+format-right-padding = 3
+format-left-padding = 0
+format-background = ${colors.background}
+format-foreground = ${colors.foreground}
 
 
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 96
 
+format-charging = <label-charging>
+format-discharging = <label-discharging>
+format-full = <label-full>
 
+label-charging = %percentage%%
+label-charging-background = ${colors.polar4}
+label-charging-foreground = ${colors.frost3}
+label-charging-padding = 3
 
+label-discharging = %percentage%%
+label-discharging-background = ${self.label-charging-background}
+label-discharging-foreground = ${self.label-charging-foreground}
+label-discharging-padding = ${self.label-charging-padding}
 
+label-full = %percentage%%
+label-full-background = ${self.label-charging-background}
+label-full-foreground = ${self.label-charging-foreground}
+label-full-padding = ${self.label-charging-padding}
 
 [settings]
 screenchange-reload = true
@@ -320,10 +251,20 @@ screenchange-reload = true
 ;compositing-background = screen
 ;compositing-foreground = source
 ;compositing-border = over
-;pseudo-transparency = false
 
 [global/wm]
 margin-top = 5
 margin-bottom = 5
+
+[module/menu]
+type = custom/text
+
+content = "%{T2}   %{T-}%{T3} %{T-}"
+content-padding = 0
+content-background = ${colors.background}
+content-foreground = ${colors.pine_glade}
+
+click-left = rofi -modi drun -show drun -font "Hack 20" -icon-theme "Tela" -show-icons
+
 
 ; vim:ft=dosini
