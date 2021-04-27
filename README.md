@@ -25,3 +25,7 @@ A collection of my dot files.
 * ttf-windows
 * ttf-roboto-slab
 * ttf-apple-emoji
+* ttf-fira-code
+* siji-git
+* ttf-unifont 
+* nerd-fonts-complete
