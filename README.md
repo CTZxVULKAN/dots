@@ -3,7 +3,7 @@ A collection of my dot files.
 
 ## Dependencies
 
-### Programs
+### i3
 * Kitty (Terminal)
 * Rofi (Application launcher)
 * Polybar (Status bar)
