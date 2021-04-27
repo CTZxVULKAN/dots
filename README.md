@@ -64,3 +64,9 @@ sudo pacman -S bluez bluez-openrc bluez-utils bluez-libs bluez-firmware
 sudo pacman -S blueman
 sudo reboot
 ```
+
+* Printers & Scanners
+
+```html
+sudo pacman -S cups cups-openrc
+```
