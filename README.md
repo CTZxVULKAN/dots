@@ -17,10 +17,13 @@ A collection of my dot files.
 * Pamixer (Volume control for pulse audio)
 * Tela (Icon pack for rofi)
 * Flat-Remix-Gtk ( GTK3/4 theme)
+* Firefox (Web browser)
+* Brave (Web browser)
+* Neovim (Editor)
 
 ```html
-sudo pacman -S kitty rofi dunst nitrogen lxappearance xautolock i3exit pamixer 
-yay -S polybar picom-jonaburg-git i3scrot tela-icon-theme flat-remix-gtk
+sudo pacman -S kitty rofi dunst nitrogen lxappearance xautolock i3exit pamixer firefox
+yay -S polybar picom-jonaburg-git i3scrot tela-icon-theme flat-remix-gtk brave-bin
 ```
 ### Essential fonts 
 * noto-fonts
