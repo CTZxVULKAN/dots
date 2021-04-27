@@ -11,6 +11,7 @@ A collection of my dot files.
 * Nitrogen (Wallpaper)
 * Lxappearance (GTK theme manager)
 * Picom (Compositor) 
+* w3m (Neofetch backend)
 * Xautolock (Lockscreen)
 * i3exit (Exit script including blurlock)
 * i3-scrot (Screenshot utility)
@@ -24,7 +25,7 @@ A collection of my dot files.
 
 ```html
 sudo pacman -S kitty rofi dunst nitrogen lxappearance xautolock i3exit pamixer firefox pcmanfm
-yay -S polybar picom-jonaburg-git i3scrot tela-icon-theme flat-remix-gtk brave-bin
+yay -S polybar picom-jonaburg-git i3scrot tela-icon-theme flat-remix-gtk brave-bin w3m
 ```
 ### Essential fonts 
 * noto-fonts
