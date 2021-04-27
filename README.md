@@ -20,9 +20,10 @@ A collection of my dot files.
 * Firefox (Web browser)
 * Brave (Web browser)
 * Neovim (Editor)
+* Pcmanfm (File browser)
 
 ```html
-sudo pacman -S kitty rofi dunst nitrogen lxappearance xautolock i3exit pamixer firefox
+sudo pacman -S kitty rofi dunst nitrogen lxappearance xautolock i3exit pamixer firefox pcmanfm
 yay -S polybar picom-jonaburg-git i3scrot tela-icon-theme flat-remix-gtk brave-bin
 ```
 ### Essential fonts 
@@ -38,3 +39,8 @@ yay -S polybar picom-jonaburg-git i3scrot tela-icon-theme flat-remix-gtk brave-b
 * siji-git
 * ttf-unifont 
 * nerd-fonts-complete
+
+```html
+sudo pacman -S noto-fonts ttf-droid ttf-dejavu ttf-opensans ttf-ubuntu-font-family
+yay -S ttf-windows ttf-roboto-slab ttf-apple-emoji ttf-fira-code nerd-fonts-complete siji-git ttf-unifont 
+```
