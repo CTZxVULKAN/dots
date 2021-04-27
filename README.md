@@ -44,3 +44,13 @@ yay -S polybar picom-jonaburg-git i3scrot tela-icon-theme flat-remix-gtk brave-b
 sudo pacman -S noto-fonts ttf-droid ttf-dejavu ttf-opensans ttf-ubuntu-font-family
 yay -S ttf-windows ttf-roboto-slab ttf-apple-emoji ttf-fira-code nerd-fonts-complete siji-git ttf-unifont 
 ```
+
+## Graphics Drivers
+
+* Nvidia
+
+```html
+sudo pacman -S nvidia
+sudo reboot 
+nvidia-smi
+```
