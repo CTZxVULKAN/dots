@@ -6,16 +6,22 @@ A collection of my dot files.
 ### Programs
 * Kitty (Terminal)
 * Rofi (Application launcher)
+* Polybar (Status bar)
 * Dunst (Notification Daemon)
 * Nitrogen (Wallpaper)
 * Lxappearance (GTK theme manager)
 * Picom (Compositor) 
 * Xautolock (Lockscreen)
 * i3exit (Exit script including blurlock)
+* i3-scrot (Screenshot utility)
 * Pamixer (Volume control for pulse audio)
 * Tela (Icon pack for rofi)
 * Flat-Remix-Gtk ( GTK3/4 theme)
 
+```html
+sudo pacman -S kitty rofi dunst nitrogen lxappearance xautolock i3exit pamixer 
+yay -S polybar picom-jonaburg-git i3scrot tela-icon-theme flat-remix-gtk
+```
 ### Essential fonts 
 * noto-fonts
 * ttf-droid
