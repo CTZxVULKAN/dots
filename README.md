@@ -46,12 +46,21 @@ sudo pacman -S noto-fonts ttf-droid ttf-dejavu ttf-opensans ttf-ubuntu-font-fami
 yay -S ttf-windows ttf-roboto-slab ttf-apple-emoji ttf-fira-code nerd-fonts-complete siji-git ttf-unifont 
 ```
 
-## Graphics Drivers
+## Drivers
 
-* Nvidia
+* Graphics (Nvidia)
 
 ```html
 sudo pacman -S nvidia
 sudo reboot 
 nvidia-smi
+```
+
+* Sound & Bluetooth
+
+```html
+sudo pacman -S pulseaudio pulseaudio-alsa pulseaudio-bluetooth alsa-utils pavucontrol
+sudo pacman -S bluez bluez-openrc bluez-utils bluez-libs bluez-firmware 
+sudo pacman -S blueman
+sudo reboot
 ```
