@@ -98,3 +98,19 @@ sudo rc-update NetworkManager add default
 sudo pacman -S cups cups-openrc
 sudo rc-update add cupsd default
 ```
+
+## Display Servers and Managers
+
+* Xorg
+
+```html
+sudo pacman -S xorg --ignore xorg-server-xdmx displaymanager-openrc
+sudo rc-update add cupsd default
+```
+
+* Lightdm
+
+```html
+sudo pacman -S lightdm lightdm-gtk-greeter
+sudo rc-update add xdm default
+```
