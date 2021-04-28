@@ -18,15 +18,32 @@ A collection of my dot files.
 * Pamixer (Volume control for pulse audio)
 * Tela (Icon pack for rofi)
 * Flat-Remix-Gtk ( GTK3/4 theme)
-* Firefox (Web browser)
-* Brave (Web browser)
-* Neovim (Editor)
-* Pcmanfm (File browser)
+
 
 ```html
 sudo pacman -S kitty rofi dunst nitrogen lxappearance xautolock i3exit pamixer firefox pcmanfm
 yay -S polybar picom-jonaburg-git i3scrot tela-icon-theme flat-remix-gtk brave-bin w3m
 ```
+
+### Software suite
+* Firefox (Web browser)
+* Brave (Web browser)
+* Neovim (Editor)
+* Leafpad (Editor)
+* Pcmanfm (File browser)
+* Discord (Internet messenger)
+* Viewnior (Image viewer)
+* Mpv (Media player)
+* Atril (Document viewer)
+* Transmission (Torrent client)
+* Xarchiver (Archive manager)
+
+
+```html
+sudo pacman -S firefox pcmanfm discord viewnior mpv leafpad atril transmission-gtk
+yay -S brave-bin xarchiver p7zip zip unzip unrar
+```
+
 ### Essential fonts 
 * noto-fonts
 * ttf-droid
