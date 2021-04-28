@@ -67,6 +67,14 @@ sudo rc-update add bluetoothd default
 sudo reboot
 ```
 
+* Wifi 
+
+```html
+sudo pacman -S networkmanager networkmanager-openrc network-manager-applet
+sudo rc-update NetworkManager add default
+
+```
+ 
 * Printers & Scanners
 
 ```html
