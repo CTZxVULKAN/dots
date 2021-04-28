@@ -105,7 +105,6 @@ sudo rc-update add cupsd default
 
 ```html
 sudo pacman -S xorg --ignore xorg-server-xdmx displaymanager-openrc
-sudo rc-update add cupsd default
 ```
 
 * Lightdm
