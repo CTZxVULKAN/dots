@@ -113,3 +113,4 @@ sudo pacman -S xorg --ignore xorg-server-xdmx displaymanager-openrc
 sudo pacman -S lightdm lightdm-gtk-greeter
 sudo rc-update add xdm default
 ```
+Make sure to set DISPLAYMANAGER="lightdm" in /etc/conf.d/xdm
