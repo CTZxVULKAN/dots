@@ -22,7 +22,7 @@ A collection of my dot files.
 
 ```html
 sudo pacman -S kitty rofi dunst nitrogen lxappearance xautolock i3exit pamixer firefox pcmanfm
-yay -S polybar picom-jonaburg-git i3scrot tela-icon-theme flat-remix-gtk brave-bin w3m
+yay -S polybar picom-jonaburg-git i3-scrot tela-icon-theme flat-remix-gtk brave-bin w3m
 ```
 
 ### Software suite
@@ -68,7 +68,7 @@ yay -S ttf-windows ttf-roboto-slab ttf-apple-emoji ttf-fira-code nerd-fonts-comp
 * Graphics (Nvidia)
 
 ```html
-sudo pacman -S nvidia
+sudo pacman -S nvidia nvidia-utils-openrc
 sudo reboot 
 nvidia-smi
 ```
