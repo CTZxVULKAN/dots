@@ -99,18 +99,5 @@ sudo pacman -S cups cups-openrc
 sudo rc-update add cupsd default
 ```
 
-## Display Servers and Managers
 
-* Xorg
 
-```html
-sudo pacman -S xorg --ignore xorg-server-xdmx displaymanager-openrc
-```
-
-* Lightdm
-
-```html
-sudo pacman -S lightdm lightdm-gtk-greeter
-sudo rc-update add xdm default
-```
-> Note: Make sure to set DISPLAYMANAGER="lightdm" in /etc/conf.d/xdm
