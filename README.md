@@ -1,4 +1,4 @@
-# dots
+# dots[ARTIX OPENRC]
 A collection of my dot files.
 
 ## Dependencies
