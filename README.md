@@ -101,4 +101,13 @@ sudo rc-update add cupsd default
 
 ## Debloat 
 
+* Common
+
+```html
+sudo pacman -Rns kde applications
+sudo pacman -Rc gnome
+sudo pacman -Rc cinnamon-desktop
+yay -c
+```
+
 
