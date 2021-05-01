@@ -21,8 +21,8 @@ A collection of my dot files.
 
 
 ```html
-sudo pacman -S kitty rofi dunst nitrogen lxappearance xautolock i3exit pamixer firefox pcmanfm
-yay -S polybar picom-jonaburg-git i3-scrot tela-icon-theme flat-remix-gtk brave-bin w3m
+sudo pacman -S kitty rofi dunst nitrogen lxappearance xautolock pamixer firefox pcmanfm
+yay -S polybar picom-jonaburg-git i3-scrot tela-icon-theme flat-remix-gtk i3exit w3m
 ```
 
 ### Software suite
@@ -40,7 +40,7 @@ yay -S polybar picom-jonaburg-git i3-scrot tela-icon-theme flat-remix-gtk brave-
 
 
 ```html
-sudo pacman -S firefox pcmanfm discord viewnior mpv leafpad atril transmission-gtk
+sudo pacman -S firefox pcmanfm discord viewnior mpv leafpad atril transmission-gtk neovim
 yay -S brave-bin xarchiver p7zip zip unzip unrar
 ```
 
@@ -77,8 +77,8 @@ nvidia-smi
 
 ```html
 sudo pacman -S pulseaudio pulseaudio-alsa pulseaudio-bluetooth alsa-utils pavucontrol
-sudo pacman -S bluez bluez-openrc bluez-utils bluez-libs bluez-firmware 
-sudo pacman -S blueman
+sudo pacman -S bluez bluez-openrc bluez-utils bluez-libs 
+yay -S bluez-firmware blueman
 pactl set-default-sink 1
 sudo rc-update add bluetoothd default
 sudo reboot
@@ -99,5 +99,6 @@ sudo pacman -S cups cups-openrc
 sudo rc-update add cupsd default
 ```
 
+## Debloat 
 
 
