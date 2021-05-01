@@ -63,7 +63,7 @@ sudo pacman -S noto-fonts ttf-droid ttf-dejavu ttf-opensans ttf-ubuntu-font-fami
 yay -S ttf-windows ttf-roboto-slab ttf-apple-emoji ttf-fira-code nerd-fonts-complete siji-git ttf-unifont 
 ```
 
-## Drivers
+## Drivers & Devices
 
 * Graphics (Nvidia)
 
@@ -97,6 +97,12 @@ sudo rc-update NetworkManager add default
 ```html
 sudo pacman -S cups cups-openrc
 sudo rc-update add cupsd default
+```
+* USB Mounting
+
+```html
+sudo pacman -S udisks2 udiskie
+
 ```
 
 ## Debloat 
