@@ -101,7 +101,7 @@ sudo rc-update add cupsd default
 * USB Auto-mounting
 
 ```html
-sudo pacman -S udisks2 udiskie
+sudo pacman -S udisks2 udiskie gvfs
 sudo rebooot
 ```
 
