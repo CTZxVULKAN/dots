@@ -1,4 +1,4 @@
-# dots [ARTIX OPENRC]
+# dots 
 A collection of my dot files.
 <br>
 
