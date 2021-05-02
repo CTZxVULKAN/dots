@@ -79,7 +79,7 @@ sudo reboot
 nvidia-smi
 ```
 
-> * Incase you are gaming install 
+> * Incase you are gaming install this alongside
 ```html
 sudo pacman -S nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader
 ```
