@@ -50,6 +50,9 @@ exec --no-startup-id clipit
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id fix_xcursor
 
+#Automounting usb devices
+exec --no-startup-id udiskie -a 
+
 #volume control via script
 #if does not work change sink to 1 with :.
 #pactl set-default-sink 1
