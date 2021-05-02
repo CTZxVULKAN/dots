@@ -2,8 +2,9 @@
 A collection of my dot files.
 <br>
 
-![Project Banner](./repo/screenshot.png)
+![Project Banner](./repo/screenshot1.png)
 
+<br>
 ## Dependencies
 
 ### i3
