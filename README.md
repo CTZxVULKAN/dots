@@ -116,7 +116,8 @@ sudo rebooot
 * Common
 
 ```html
-sudo pacman -Rns kde applications
+sudo pacman -Rns kde-applications
+sudo pacman -Rns xfce4 xfce4-goodies
 sudo pacman -Rc gnome
 sudo pacman -Rc cinnamon-desktop
 yay -c
