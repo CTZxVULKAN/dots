@@ -3,8 +3,9 @@ A collection of my dot files.
 <br>
 
 ![Project Banner](./repo/screenshot1.png)
-
+![Platform](https://img.shields.io/static/v1?label=Distro&message=Arch&style=flat-square&color=orange)
 <br>
+
 ## Dependencies
 
 ### i3
