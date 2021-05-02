@@ -1,6 +1,6 @@
 # dots [ARTIX OPENRC]
 A collection of my dot files.
-
+![Project Banner](./repo/screenshot.png)
 ## Dependencies
 
 ### i3
