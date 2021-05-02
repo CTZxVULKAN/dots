@@ -3,7 +3,8 @@ A collection of my dot files.
 <br>
 
 ![Project Banner](./repo/screenshot1.png)
-![Platform](https://img.shields.io/static/v1?label=Distro&message=Arch&style=flat-square&color=orange)
+![Platform](https://img.shields.io/static/v1?label=Distro&message=Artix&style=flat-square&color=orange)
+![Platform](https://img.shields.io/static/v1?label=Window-Magager&message=i3-gaps&style=flat-square&color=orange)
 <br>
 
 ## Dependencies
