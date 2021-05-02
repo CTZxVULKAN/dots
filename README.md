@@ -3,7 +3,7 @@ A collection of my dot files.
 <br>
 
 ![Project Banner](./repo/screenshot1.png)
-![Platform](https://img.shields.io/static/v1?label=Distro&message=Artix&style=for-the-badge&logo=artixlinux&color=blue)
+![Platform](https://img.shields.io/static/v1?label=Distro&message=Artix&style=for-the-badge&logo=artix-linux&color=blue)
 ![Platform](https://img.shields.io/static/v1?label=Window-Magager&message=i3-gaps&style=flat-square&color=orange)
 <br>
 
