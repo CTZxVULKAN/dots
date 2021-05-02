@@ -79,6 +79,13 @@ sudo reboot
 nvidia-smi
 ```
 
+* Intregrated-graphics (Intel)
+
+```html
+sudo pacman -S intel-ucode
+sudo reboot 
+```
+
 * Sound & Bluetooth
 
 ```html
