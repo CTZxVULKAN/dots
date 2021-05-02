@@ -98,11 +98,11 @@ sudo rc-update NetworkManager add default
 sudo pacman -S cups cups-openrc
 sudo rc-update add cupsd default
 ```
-* USB Mounting
+* USB Auto-mounting
 
 ```html
 sudo pacman -S udisks2 udiskie
-
+sudo rebooot
 ```
 
 ## Debloat 
