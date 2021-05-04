@@ -38,7 +38,7 @@ yay -S polybar picom-jonaburg-git i3-scrot tela-icon-theme flat-remix-gtk i3exit
 * Leafpad (Editor)
 * Pcmanfm (File browser)
 * Discord (Internet messenger)
-* Viewnior (Image viewer)
+* GPicView (Image viewer)
 * Mpv (Media player)
 * Atril (Document viewer)
 * Transmission (Torrent client)
@@ -46,7 +46,7 @@ yay -S polybar picom-jonaburg-git i3-scrot tela-icon-theme flat-remix-gtk i3exit
 
 
 ```html
-sudo pacman -S firefox pcmanfm discord viewnior mpv leafpad atril transmission-gtk neovim
+sudo pacman -S firefox pcmanfm discord gpicview mpv leafpad atril transmission-gtk neovim
 yay -S brave-bin xarchiver p7zip zip unzip unrar
 ```
 
