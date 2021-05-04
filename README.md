@@ -14,6 +14,7 @@ A collection of my dot files.
 * Rofi (Application launcher)
 * Polybar (Status bar)
 * Dunst (Notification Daemon)
+* Pcmanfm (File browser)
 * Nitrogen (Wallpaper)
 * Lxappearance (GTK theme manager)
 * Picom (Compositor) 
@@ -36,7 +37,6 @@ yay -S polybar picom-jonaburg-git i3-scrot tela-icon-theme flat-remix-gtk i3exit
 * Brave (Web browser)
 * Neovim (Editor)
 * Leafpad (Editor)
-* Pcmanfm (File browser)
 * Discord (Internet messenger)
 * GPicView (Image viewer)
 * Mpv (Media player)
@@ -46,7 +46,7 @@ yay -S polybar picom-jonaburg-git i3-scrot tela-icon-theme flat-remix-gtk i3exit
 
 
 ```html
-sudo pacman -S firefox pcmanfm discord gpicview mpv leafpad atril transmission-gtk neovim
+sudo pacman -S firefox discord gpicview mpv leafpad atril transmission-gtk neovim
 yay -S brave-bin xarchiver p7zip zip unzip unrar
 ```
 
