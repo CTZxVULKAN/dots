@@ -143,5 +143,5 @@ sudo pacman -Rc gnome
 sudo pacman -Rc cinnamon-desktop
 yay -c
 ```
-> * Some drivers might be uninstalled in the prosecess of debloating. It is advised to reinstall the [drivers](#Drivers & Devices) once more after debloating. This will be fairly quick as build files for the drivers will be stored in cache
+> * Some drivers might be uninstalled in the prosecess of debloating. It is advised to reinstall the [drivers](#drivers-&-devices) once more after debloating. This will be fairly quick as build files for the drivers will be stored in cache
 
