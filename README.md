@@ -27,7 +27,7 @@ A collection of my dot files.
 
 
 ```html
-sudo pacman -S kitty rofi dunst nitrogen lxappearance xautolock pamixer firefox pcmanfm
+sudo pacman -S kitty rofi dunst nitrogen lxappearance-gtk3 xautolock pamixer firefox pcmanfm-gtk3
 yay -S polybar picom-jonaburg-git i3-scrot tela-icon-theme flat-remix-gtk i3exit w3m
 ```
 
