@@ -116,6 +116,7 @@ sudo rc-update NetworkManager add default
 ```html
 sudo pacman -S cups cups-openrc
 sudo rc-update add cupsd default
+yay -S simple-scan
 ```
 * USB Auto-mounting
 
