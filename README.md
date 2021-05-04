@@ -116,8 +116,15 @@ sudo rc-update NetworkManager add default
 ```html
 sudo pacman -S cups cups-openrc
 sudo rc-update add cupsd default
-yay -S simple-scan
+sudo pacman -S hplip system-config-printer simple-scan
+sudo reboot
 ```
+> * Incase you are dont have a hp printer install the following driver instead of hplip
+```html
+sudo pacman -S gutenprint
+```
+<br>
+
 * USB Auto-mounting
 
 ```html
