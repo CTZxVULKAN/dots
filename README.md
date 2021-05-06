@@ -133,11 +133,18 @@ sudo rebooot
 ```
 ## PATHS
 
+* Bash
+
+```html
+export PATH=$PATH:~/.local/bin
+```
+
 * Fish 
 
 ```html
 fish_add_path  ~/.local/bin
 ```
+> * Unlike bash fish doesnt have any fishrc just execute this command.
 
 ## Debloat 
 
