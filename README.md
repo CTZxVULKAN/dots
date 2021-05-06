@@ -131,6 +131,13 @@ sudo pacman -S gutenprint
 sudo pacman -S udisks2 udiskie gvfs
 sudo rebooot
 ```
+## PATHS
+
+* Fish 
+
+```html
+fish_add_path  ~/.local/bin
+```
 
 ## Debloat 
 
