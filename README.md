@@ -131,6 +131,16 @@ sudo pacman -S gutenprint
 sudo pacman -S udisks2 udiskie gvfs
 sudo rebooot
 ```
+
+
+* USB Auto-mounting Android Devices
+
+```html
+sudo pacman -S mtpfs gvfs-mtp gvfs-gphoto2
+yay -S jmtpfs
+sudo rebooot
+```
+
 ## PATHS
 
 * Bash
