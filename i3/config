@@ -13,7 +13,7 @@ set $mod Mod4
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 1
+default_border pixel 
 default_floating_border normal
 
 # Hide borders
@@ -46,12 +46,9 @@ bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 #exec --no-startup-id nm-applet
-exec --no-startup-id clipit
+exec --no-startup-id blueman-applet
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id fix_xcursor
-
-#Automounting usb devices
-exec --no-startup-id udiskie -a 
 
 #volume control via script
 #if does not work change sink to 1 with :.
@@ -62,6 +59,8 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id $HOME/.config/i3/vol.sh +5% &&
 bindsym XF86AudioLowerVolume exec --no-startup-id $HOME/.config/i3/vol.sh -5% && notify-send 'Volume:'$(pamixer --get-volume)  # decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id $HOME/.config/i3/vol.sh mute      # mute sound
 
+#Automounting usb devices
+exec --no-startup-id udiskie -a 
 
 # Screenshots
 # yay -S i3-scrot
@@ -104,8 +103,8 @@ bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
-bindsym $mod+h split h;exec notify-send 'next window tiles horizontally'
-bindsym $mod+v split v;exec notify-send 'next window tiles vertically'
+bindsym $mod+h split horizontal;exec notify-send 'next window tiles horizontally'
+bindsym $mod+v split vertical;exec notify-send 'next window tiles vertically'
 bindsym $mod+q split toggle
 
 # toggle fullscreen mode for the focused container
