@@ -37,7 +37,7 @@ yay -S polybar picom-jonaburg-git i3-scrot tela-icon-theme flat-remix-gtk i3exit
 * Firefox (Web browser)
 * Brave (Web browser)
 * Neovim (Editor)
-* Leafpad (Editor)
+* l3afpad (Graphical Editor)
 * Discord (Internet messenger)
 * GPicView (Image viewer)
 * Mpv (Media player)
@@ -47,8 +47,8 @@ yay -S polybar picom-jonaburg-git i3-scrot tela-icon-theme flat-remix-gtk i3exit
 
 
 ```html
-sudo pacman -S firefox discord gpicview mpv leafpad atril transmission-gtk neovim
-yay -S brave-bin xarchiver p7zip zip unzip unrar
+sudo pacman -S firefox discord gpicview mpv atril transmission-gtk neovim
+yay -S l3afpad brave-bin xarchiver p7zip zip unzip unrar
 ```
 
 ### Essential fonts 
