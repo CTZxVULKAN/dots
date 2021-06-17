@@ -62,8 +62,8 @@ font-8 = "Font Awesome 5 Free:style=Solid:pixelsize=15;2"
 font-9 = "Font Awesome 5 Brands:pixelsize=12;2
 
 modules-left = menu i3 xwindow
-modules-center= 
-modules-right=date
+modules-center=  
+modules-right=date dnd 
 
 #systray
 ;tray-detatched=true
@@ -144,14 +144,14 @@ wrapping-scroll = false
 ;pin-workspaces = true
 ; all work space icons are nerdfont hack  icons
 
-ws-icon-0 =1; 
+ws-icon-0 =1;
 ws-icon-1 =2; 
 ws-icon-2 =3; 
 ws-icon-3 =4; 
 ws-icon-4 =5;
 ws-icon-5 =6; 
 ws-icon-6 =7;
-ws-icon-7 =8;
+ws-icon-7 =8;
 
 label-mode-padding = 2
 label-mode-foreground = #000
@@ -220,6 +220,12 @@ format-background = ${colors.background}
 format-foreground = ${colors.foreground}
 
 
+[module/dnd]
+type = custom/script
+exec = ~/.config/polybar/scripts/dnd_status.sh
+interval = 1
+click-left = dunstctl set-paused toggle
+
 [module/battery]
 type = internal/battery
 battery = BAT0
@@ -265,6 +271,5 @@ content-background = ${colors.background}
 content-foreground = ${colors.pine_glade}
 
 click-left = rofi -modi drun -show drun -font "Hack 20" -icon-theme "Tela" -show-icons
-
 
 ; vim:ft=dosini

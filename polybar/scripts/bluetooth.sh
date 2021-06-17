@@ -9,5 +9,3 @@ else
   fi
   echo "%{F#25CCF7}   "
 fi
-
-
