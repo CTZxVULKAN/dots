@@ -41,14 +41,14 @@ yay -S polybar picom-jonaburg-git i3-scrot tela-icon-theme flat-remix-gtk i3exit
 * Discord (Internet messenger)
 * GPicView (Image viewer)
 * Mpv (Media player)
-* Atril (Document viewer)
+* Zathura (Document viewer)
 * Transmission (Torrent client)
 * Xarchiver (Archive manager)
 
 
 ```html
-sudo pacman -S firefox discord gpicview mpv atril transmission-gtk neovim
-yay -S l3afpad brave-bin xarchiver p7zip zip unzip unrar
+sudo pacman -S firefox discord gpicview mpv transmission-gtk neovim
+yay -S l3afpad zathura zathura-pdf-mupdf brave-bin xarchiver p7zip zip unzip unrar
 ```
 
 ### Essential fonts 
