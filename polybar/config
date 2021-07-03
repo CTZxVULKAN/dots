@@ -63,11 +63,15 @@ font-8 = "Font Awesome 5 Free:style=Solid:pixelsize=15;2"
 font-9 = "Font Awesome 5 Brands:pixelsize=12;2
 
 modules-left = menu i3 xwindow
-modules-center=  
+modules-center= cmus 
 modules-right=date 
 
 
 wm-restack = i3
+
+#systray
+#tray-detatched=true
+#tray-position=right
 
 [bar/polybarstatus]
 width=10%
@@ -230,8 +234,6 @@ interval = 1
 
 click-left = exec  ~/.config/polybar/scripts/bluetooth_toggle.sh
 
-
-
 format-right-padding = 3
 format-left-padding = 0
 format-background = ${colors.background}
@@ -243,6 +245,20 @@ type = custom/script
 exec = ~/.config/polybar/scripts/dnd_status.sh
 interval = 1
 click-left = dunstctl set-paused toggle
+
+
+[module/cmus]
+type = custom/script
+
+exec = ~/.config/polybar/scripts/cmus.sh
+
+exec-if = pgrep -x cmus
+interval = 1
+
+click-left = cmus-remote --pause
+scroll-down = cmus-remote --next
+scroll-up = cmus-remote --prev
+label-maxlen = 100
 
 [module/battery]
 type = internal/battery
