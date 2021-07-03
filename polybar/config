@@ -43,7 +43,8 @@ fixed-center = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-border-size = 6
+border-top-size = 4
+border-left-size =12
 border-color = #00000000
 
 font-0 = fixed:pixelsize=10;2
@@ -63,11 +64,8 @@ font-9 = "Font Awesome 5 Brands:pixelsize=12;2
 
 modules-left = menu i3 xwindow
 modules-center=  
-modules-right=date dnd 
+modules-right=date 
 
-#systray
-;tray-detatched=true
-;tray-position=right
 
 wm-restack = i3
 
@@ -77,7 +75,9 @@ height=35
    
 override-redirect=true
 offset-x=90%
-border-size = 6
+border-size = 4
+border-right-size =12
+
 border-color = #00000000
 
 radius = 3
@@ -103,12 +103,13 @@ font-9 = "Font Awesome 5 Brands:pixelsize=12;2
 
 
 modules-left =  
-modules-center = volume bluetooth eth 
+modules-center = volume bluetooth eth dnd 
 modules-right =
 
-wm-restack = i3
 
-
+#systray
+#tray-detatched=true
+#tray-position=right
 
 
 [module/eth]
@@ -159,21 +160,35 @@ label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
 label-focused = %icon%
-label-focused-background = ${colors.peach}
-label-focused-foreground = ${colors.ships_officer}
+
+;label-focused-background = ${colors.peach}
+;label-focused-foreground = ${colors.ships_officer}
+
+label-focused-background = ${colors.background}
+label-focused-foreground = ${colors.peach}
+
 label-focused-padding = 3
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %icon%
 label-unfocused-padding = 3
-label-unfocused-background = ${colors.disco_ball}
-label-unfocused-foreground = ${colors.ending_navy}
+
+;label-unfocused-background = ${colors.disco_ball}
+;label-unfocused-foreground = ${colors.ending_navy}
+
+label-unfocused-background = ${colors.background}
+label-unfocused-foreground = ${colors.disco_ball}
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %icon%
 label-visible-padding = 3
-label-visible-background = ${colors.disco_ball}
-label-visible-foreground = ${colors.ending_navy}
+
+;label-visible-background = ${colors.disco_ball}
+;label-visible-foreground = ${colors.ending_navy}
+
+labl-visible-background = ${colors.background}
+label-visible-foreground = ${colors.disco_ball}
+
 
 ; urgent = Workspace with urgency hint set
 label-urgent = %icon%
@@ -211,9 +226,12 @@ label-muted-foreground =  #707880
 [module/bluetooth]
 type = custom/script
 exec = ~/.config/polybar/scripts/bluetooth.sh
-interval = 2
-;click-left = exec blueberry
-;click-right = exec path/to/scripts/config/polybar/toggle_bluetooth.sh
+interval = 1
+
+click-left = exec  ~/.config/polybar/scripts/bluetooth_toggle.sh
+
+
+
 format-right-padding = 3
 format-left-padding = 0
 format-background = ${colors.background}
@@ -268,8 +286,9 @@ type = custom/text
 content = "%{T2}   %{T-}%{T3} %{T-}"
 content-padding = 0
 content-background = ${colors.background}
-content-foreground = ${colors.pine_glade}
+content-foreground = ${colors.white_pepper}
 
 click-left = rofi -modi drun -show drun -font "Hack 20" -icon-theme "Tela" -show-icons
 
 ; vim:ft=dosini
+

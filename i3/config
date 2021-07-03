@@ -13,15 +13,16 @@ set $mod Mod4
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 1
+default_border pixel 2 
 default_floating_border normal
+
 
 # Hide borders
 hide_edge_borders none
 
 # change borders
 bindsym $mod+u border none
-bindsym $mod+y border pixel 1
+bindsym $mod+y border pixel 2
 bindsym $mod+n border normal
 
 #window fonts
@@ -103,8 +104,9 @@ bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
-bindsym $mod+h split horizontal;exec notify-send 'next window tiles horizontally'
-bindsym $mod+v split vertical;exec notify-send 'next window tiles vertically'
+bindsym $mod+h split horizontal; exec notify-send 'next window tiles horizontally'
+bindsym $mod+v split vertical; exec notify-send 'next window tiles vertically'
+
 bindsym $mod+q split toggle
 
 # toggle fullscreen mode for the focused container
@@ -346,4 +348,5 @@ bindsym $mod+F6 exec pavucontrol
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 
-
+#dnd
+#bindsym $mod+F10 exec dunstctl set-paused toggle
