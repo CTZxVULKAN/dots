@@ -32,7 +32,7 @@ pine_glade = #BDC581
 lavender = #82589F
 
 [bar/polybari3]
-width = 90%
+width = 89%
 height = 35
 ;offset-x = 10%
 ;offset-y = 10%
@@ -63,7 +63,7 @@ font-8 = "Font Awesome 5 Free:style=Solid:pixelsize=15;2"
 font-9 = "Font Awesome 5 Brands:pixelsize=12;2
 
 modules-left = menu i3 xwindow
-modules-center= cmus 
+modules-center= cmus  
 modules-right=date 
 
 
@@ -74,11 +74,11 @@ wm-restack = i3
 #tray-position=right
 
 [bar/polybarstatus]
-width=10%
+width=11%
 height=35
    
 override-redirect=true
-offset-x=90%
+offset-x=89%
 border-size = 4
 border-right-size =12
 
@@ -107,13 +107,17 @@ font-9 = "Font Awesome 5 Brands:pixelsize=12;2
 
 
 modules-left =  
-modules-center = volume bluetooth eth dnd 
+modules-center = volume bluetooth eth protonvpn dnd 
 modules-right =
 
 
 #systray
 #tray-detatched=true
 #tray-position=right
+
+
+
+
 
 
 [module/eth]
@@ -259,6 +263,12 @@ click-left = cmus-remote --pause
 scroll-down = cmus-remote --next
 scroll-up = cmus-remote --prev
 label-maxlen = 100
+
+
+[module/protonvpn]
+type = custom/script
+exec = ~/.config/polybar/scripts/protonvpn.sh
+interval = 1
 
 [module/battery]
 type = internal/battery
