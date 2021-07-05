@@ -104,8 +104,8 @@ bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
-bindsym $mod+h split horizontal; exec notify-send 'next window tiles horizontally'
-bindsym $mod+v split vertical; exec notify-send 'next window tiles vertically'
+bindsym $mod+h split horizontal; exec --no-startup-id notify-send 'next window tiles horizontally'
+bindsym $mod+v split vertical; exec --no-startup-id  notify-send 'next window tiles vertically'
 
 bindsym $mod+q split toggle
 
@@ -348,5 +348,3 @@ bindsym $mod+F6 exec pavucontrol
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 
-#dnd
-#bindsym $mod+F10 exec dunstctl set-paused toggle
