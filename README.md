@@ -44,11 +44,12 @@ yay -S polybar picom-jonaburg-git i3-scrot tela-icon-theme flat-remix-gtk i3exit
 * Zathura (Document viewer)
 * Transmission (Torrent client)
 * Xarchiver (Archive manager)
+* ProtonVPN (VPN)
 
 
 ```html
 sudo pacman -S firefox discord gpicview mpv transmission-gtk neovim
-yay -S l3afpad zathura zathura-pdf-mupdf brave-bin xarchiver p7zip zip unzip unrar
+yay -S l3afpad zathura zathura-pdf-mupdf brave-bin xarchiver p7zip zip unzip unrar protonvpn-cli-ng
 ```
 
 ### Essential fonts 
@@ -159,7 +160,7 @@ fish_add_path  ~/.local/bin
 
 ## Debloat 
 
-* Common
+* Artix Cinnamon ISO
 
 ```html
 sudo pacman -Rns kde-applications
