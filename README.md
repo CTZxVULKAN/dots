@@ -38,7 +38,8 @@ yay -S polybar picom-jonaburg-git i3-scrot tela-icon-theme flat-remix-gtk i3exit
 * Brave (Web browser)
 * Neovim (Editor)
 * l3afpad (Graphical Editor)
-* Discord (Internet messenger)
+* Element (Internet messenger)
+* Signal (Internet messenger)
 * GPicView (Image viewer)
 * Mpv (Media player)
 * Zathura (Document viewer)
@@ -48,8 +49,8 @@ yay -S polybar picom-jonaburg-git i3-scrot tela-icon-theme flat-remix-gtk i3exit
 
 
 ```html
-sudo pacman -S firefox discord gpicview mpv transmission-gtk neovim
-yay -S l3afpad zathura zathura-pdf-mupdf brave-bin xarchiver p7zip zip unzip unrar protonvpn-cli-ng
+sudo pacman -S firefox gpicview mpv transmission-gtk neovim
+yay -S l3afpad zathura element-desktop signal-desktop zathura-pdf-mupdf brave-bin xarchiver p7zip zip unzip unrar protonvpn-cli-ng
 ```
 
 ### Essential fonts 
