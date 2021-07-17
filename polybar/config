@@ -107,7 +107,7 @@ font-9 = "Font Awesome 5 Brands:pixelsize=12;2
 
 
 modules-left =  
-modules-center = volume bluetooth eth protonvpn dnd 
+modules-center = volume bluetooth eth  dnd 
 modules-right =
 
 
