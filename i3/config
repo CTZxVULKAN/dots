@@ -343,6 +343,8 @@ bindsym $mod+F4 exec brave
 bindsym $mod+F5 exec blueman-manager
 bindsym $mod+F6 exec pavucontrol
 
+#Keybinding for text editor
+bindsym $mod+F7 exec l3afpad
 
 #polybar launch script
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
