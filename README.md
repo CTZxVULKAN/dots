@@ -195,7 +195,15 @@ gpg --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 --recv <Key>
 ```
 > * Here were manually importing the keys from the ubuntu server to fix this problem.
 
+You can also change your keyserver entirely in `/etc/pacman.d/gnupg/gpg.conf`
 
+```
+keyserver hkp://keyserver.ubuntu.com/
+sudo reboot
+sudo pacman -Syyy
+
+```
+> * Add this at the end of your `gpg.conf` . If keyserver already exists then change it.
 
 ## Debloat 
 
