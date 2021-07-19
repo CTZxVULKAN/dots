@@ -176,10 +176,8 @@ fish_add_path  ~/.local/bin
 ```
 > * Unlike bash fish doesnt have any fishrc just execute this command.
 
-<br>
 
 ## Common Issues
-
 
 *  **Enable  Arch Linux Support**
 
