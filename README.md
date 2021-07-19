@@ -205,10 +205,13 @@ You can also change your keyserver entirely in `/etc/pacman.d/gnupg/gpg.conf`
 
 ```
 keyserver hkp://keyserver.ubuntu.com/
+```
+> * Add this at the end of your `gpg.conf`, if keyserver already exists then change it followed by a reboot.
+
+```
 sudo reboot
 sudo pacman -Syyy
 ```
-> * Add this at the end of your `gpg.conf` . If keyserver already exists then change it.
 
 ## Debloat 
 
