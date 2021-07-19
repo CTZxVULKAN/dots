@@ -10,7 +10,9 @@ A collection of my dot files.
 
 ## Dependencies
 
-## i3
+* **i3**
+
+```
 * Kitty (Terminal)
 * Rofi (Application launcher)
 * Polybar (Status bar)
@@ -26,14 +28,16 @@ A collection of my dot files.
 * Pamixer (Volume control for pulse audio)
 * Tela (Icon pack for rofi)
 * Flat-Remix-Gtk ( GTK3/4 theme)
-
+```
 
 ```html
 sudo pacman -S kitty rofi dunst nitrogen lxappearance-gtk3 xautolock pamixer firefox pcmanfm-gtk3
 yay -S polybar picom-jonaburg-git i3-scrot tela-icon-theme flat-remix-gtk i3exit w3m
 ```
 
-## Software suite
+* **Software suite**
+
+```
 * Firefox (Web browser)
 * Brave (Web browser)
 * Neovim (Editor)
@@ -46,14 +50,16 @@ yay -S polybar picom-jonaburg-git i3-scrot tela-icon-theme flat-remix-gtk i3exit
 * Transmission (Torrent client)
 * Xarchiver (Archive manager)
 * ProtonVPN (VPN)
-
+```
 
 ```html
 sudo pacman -S firefox gpicview mpv transmission-gtk neovim
 yay -S l3afpad zathura element-desktop signal-desktop zathura-pdf-mupdf brave-bin xarchiver p7zip zip unzip unrar protonvpn-cli-ng
 ```
 
-## Essential fonts 
+* **Essential fonts**
+
+```
 * noto-fonts
 * ttf-droid
 * ttf-dejavu
@@ -66,6 +72,7 @@ yay -S l3afpad zathura element-desktop signal-desktop zathura-pdf-mupdf brave-bi
 * siji-git
 * ttf-unifont 
 * nerd-fonts-complete
+```
 
 ```html
 sudo pacman -S noto-fonts ttf-droid ttf-dejavu ttf-opensans ttf-ubuntu-font-family
@@ -169,11 +176,12 @@ fish_add_path  ~/.local/bin
 ```
 > * Unlike bash fish doesnt have any fishrc just execute this command.
 
+<br>
 
 ## Common Issues
 
 
-## Enable  Arch Linux Support
+*  **Enable  Arch Linux Support**
 
 Artix has reached the stage where it can operate without the help of the Arch repositories, including the preparation of its installation media.
 As of now `arch-repos` have been disabled by default. To enable them [view](https://wiki.artixlinux.org/Main/Repositories#Arch_repositories)
@@ -185,7 +193,7 @@ sudo pacman -Syyy
 ```
 >* After installing `artix-archlinux-support` follow all the onscreen instructions.
 
-## PGP Keys
+*  **PGP Keys**
 
 Artix sometimes has error recieving keys from the AUR. This issue can be fixed by manually getting the keys from a different server.
 
@@ -201,13 +209,12 @@ You can also change your keyserver entirely in `/etc/pacman.d/gnupg/gpg.conf`
 keyserver hkp://keyserver.ubuntu.com/
 sudo reboot
 sudo pacman -Syyy
-
 ```
 > * Add this at the end of your `gpg.conf` . If keyserver already exists then change it.
 
 ## Debloat 
 
-* Common
+*  **Common**
 
 ```html
 sudo pacman -Rns kde-applications
