@@ -154,17 +154,6 @@ sudo swapon -s
 sudo reboot
 ```
 
-## Fix PGP Keys
-
-Artix sometimes has error recieving keys from the AUR. This issue can be fixed by manually getting the keys.
-
-```
-sudo pacman -Sy gnupg
-gpg --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 --recv <Key>
-```
-> * Here were manually importing the keys from the ubuntu server to fix this problem.
-
-
 ## PATHS
 
 * Bash
@@ -179,6 +168,20 @@ export PATH=$PATH:~/.local/bin
 fish_add_path  ~/.local/bin
 ```
 > * Unlike bash fish doesnt have any fishrc just execute this command.
+
+
+### Common Issues
+
+## PGP Keys
+
+Artix sometimes has error recieving keys from the AUR. This issue can be fixed by manually getting the keys from a different server.
+
+```
+sudo pacman -Sy gnupg
+gpg --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 --recv <Key>
+```
+> * Here were manually importing the keys from the ubuntu server to fix this problem.
+
 
 ## Debloat 
 
