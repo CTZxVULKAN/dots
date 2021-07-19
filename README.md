@@ -10,7 +10,7 @@ A collection of my dot files.
 
 ## Dependencies
 
-### i3
+## i3
 * Kitty (Terminal)
 * Rofi (Application launcher)
 * Polybar (Status bar)
@@ -33,7 +33,7 @@ sudo pacman -S kitty rofi dunst nitrogen lxappearance-gtk3 xautolock pamixer fir
 yay -S polybar picom-jonaburg-git i3-scrot tela-icon-theme flat-remix-gtk i3exit w3m
 ```
 
-### Software suite
+## Software suite
 * Firefox (Web browser)
 * Brave (Web browser)
 * Neovim (Editor)
@@ -53,7 +53,7 @@ sudo pacman -S firefox gpicview mpv transmission-gtk neovim
 yay -S l3afpad zathura element-desktop signal-desktop zathura-pdf-mupdf brave-bin xarchiver p7zip zip unzip unrar protonvpn-cli-ng
 ```
 
-### Essential fonts 
+## Essential fonts 
 * noto-fonts
 * ttf-droid
 * ttf-dejavu
@@ -170,10 +170,10 @@ fish_add_path  ~/.local/bin
 > * Unlike bash fish doesnt have any fishrc just execute this command.
 
 
-### Common Issues
+## Common Issues
 
 
-##  Arch Linux Support
+## Enable  Arch Linux Support
 
 Artix has reached the stage where it can operate without the help of the Arch repositories, including the preparation of its installation media.
 As of now `arch-repos` have been disabled by default. To enable them [view](https://wiki.artixlinux.org/Main/Repositories#Arch_repositories)
@@ -207,7 +207,7 @@ sudo pacman -Syyy
 
 ## Debloat 
 
-* Artix Cinnamon ISO
+* Common
 
 ```html
 sudo pacman -Rns kde-applications
