@@ -172,6 +172,19 @@ fish_add_path  ~/.local/bin
 
 ### Common Issues
 
+
+##  Arch Linux Support
+
+Artix has reached the stage where it can operate without the help of the Arch repositories, including the preparation of its installation media.
+As of now `arch-repos` have been disabled by default. To enable them [view](https://wiki.artixlinux.org/Main/Repositories#Arch_repositories)
+
+```
+sudo pacman -S artix-archlinux-support
+sudo reboot
+sudo pacman -Syyy
+```
+>* After installing `artix-archlinux-support` follow all the onscreen instructions.
+
 ## PGP Keys
 
 Artix sometimes has error recieving keys from the AUR. This issue can be fixed by manually getting the keys from a different server.
@@ -181,6 +194,7 @@ sudo pacman -Sy gnupg
 gpg --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 --recv <Key>
 ```
 > * Here were manually importing the keys from the ubuntu server to fix this problem.
+
 
 
 ## Debloat 
