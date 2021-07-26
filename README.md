@@ -79,6 +79,10 @@ sudo pacman -S noto-fonts ttf-droid ttf-dejavu ttf-opensans ttf-ubuntu-font-fami
 yay -S ttf-windows ttf-roboto-slab ttf-apple-emoji ttf-fira-code nerd-fonts-complete siji-git ttf-unifont 
 ```
 
+> * Manual Installation of Fonts
+
+Copy the fonts to `~/.local/share/fonts`  & run `fc-cache -f -v` to rebuild your fonts cache.
+
 ## Drivers & Devices
 
 * Graphics (Nvidia)
