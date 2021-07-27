@@ -42,6 +42,12 @@ For more information regarding packer visit [here.](https://github.com/wbthomaso
 vim.cmd([[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]])
 ```
 
+### Install Intellisense 
+> To check available languages use :LspInstall `<Tab>`
+```
+:LspInstall python json cpp html typescript css bash lua
+```
+
 ### Quick Keybindings
 
 | Fucntion     | Binding        |
