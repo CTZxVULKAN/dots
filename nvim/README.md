@@ -10,4 +10,4 @@ For more information about NvChad visit [here.](https://github.com/siduck76/NvCh
 ```
 ./install.sh
 ```
-> Execute the install script and everything should be installed fine.
+> Execute the install script and everything should be installed fine by following the onscreen instructions.
