@@ -5,14 +5,14 @@ This config is based on [NvChad](https://github.com/siduck76/NvChad) with my own
 For more information about NvChad visit [here.](https://github.com/siduck76/NvChad/wiki#clone-my-setup)
 
 
-### Install Insctructions 
+### Install Insctructions
+
+> Execute the install script and everything should be installed fine by following the onscreen instructions.
 
 ```
 ./install.sh
 ```
-> Execute the install script and everything should be installed fine by following the onscreen instructions.
 
-<br>
 
 ### Packer.nvim (Plugin Manager)
 
@@ -37,8 +37,7 @@ For more information about NvChad visit [here.](https://github.com/siduck76/NvCh
 `:PackerLoad `
 
 > You can configure Neovim to automatically run :PackerCompile whenever plugins.lua is updated with an autocommand: placed in the `plugins.lua`.
-
+For more information regarding packer visit [here.(https://github.com/wbthomason/packer.nvim)
 ```
 vim.cmd([[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]])
-
 ```
