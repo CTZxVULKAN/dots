@@ -56,3 +56,4 @@ vim.cmd([[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]])
 | Browse Files | Space + f      |
 | Browse Commits | Space + cm      |
 | Switch Buffers | Tab / Shift + Tab      |
+| Format / Prettify code | Space + fm    |
