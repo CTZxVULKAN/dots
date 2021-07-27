@@ -49,6 +49,7 @@ vim.cmd([[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]])
 | New file     | Space + f + n  |
 | Save file    | Ctrl + s       |
 | Save & Quit  | Ctrl + q       |
+| Copy all   | Ctrl + a      |
 | Save & Quit buffer   | Ctrl + b       |
 | Escape  | Ctrl + c       |
 | File Viewer  | Space + e      |
