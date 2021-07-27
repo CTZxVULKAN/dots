@@ -41,3 +41,16 @@ For more information regarding packer visit [here.](https://github.com/wbthomaso
 ```
 vim.cmd([[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]])
 ```
+
+### Quick Keybindings
+
+| Fucntion     | Binding        |
+|--------------|----------------|
+| New file     | Space + f + n  |
+| Save file    | Ctrl + s       |
+| Save & Quit  | Ctrl + q       |
+| Save & Quit buffer   | Ctrl + b       |
+| Escape  | Ctrl + c       |
+| File Viewer  | Space + e      |
+| Browse Files | Space + f      |
+| Browse Commits | Space + cm      |
