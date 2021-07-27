@@ -37,7 +37,7 @@ For more information about NvChad visit [here.](https://github.com/siduck76/NvCh
 `:PackerLoad `
 
 > You can configure Neovim to automatically run :PackerCompile whenever plugins.lua is updated with an autocommand: placed in the `plugins.lua`.
-For more information regarding packer visit [here.(https://github.com/wbthomason/packer.nvim)
+For more information regarding packer visit [here.](https://github.com/wbthomason/packer.nvim)
 ```
 vim.cmd([[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]])
 ```
