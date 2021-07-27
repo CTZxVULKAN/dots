@@ -14,21 +14,22 @@ For more information about NvChad visit [here.](https://github.com/siduck76/NvCh
 
 ### Packer.nvim 
 
--- You must run this or `PackerSync` whenever you make changes to your plugin configuration
--- Regenerate compiled loader file
-:PackerCompile
+* -- You must run this or `PackerSync` whenever you make changes to your plugin configuration
 
--- Remove any disabled or unused plugins
-:PackerClean
+* -- Regenerate compiled loader file
+`:PackerCompile`
 
--- Clean, then install missing plugins
-:PackerInstall
+* -- Remove any disabled or unused plugins
+`:PackerClean`
 
--- Clean, then update and install plugins
-:PackerUpdate
+* -- Clean, then install missing plugins
+`:PackerInstall`
 
--- Perform `PackerUpdate` and then `PackerCompile`
-:PackerSync
+* -- Clean, then update and install plugins
+`:PackerUpdate`
 
--- Loads opt plugin immediately
-:PackerLoad completion-nvim ale
+* -- Perform `PackerUpdate` and then `PackerCompile`
+`:PackerSync`
+
+* -- Loads opt plugin immediately
+`:PackerLoad `
