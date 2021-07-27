@@ -12,7 +12,9 @@ For more information about NvChad visit [here.](https://github.com/siduck76/NvCh
 ```
 > Execute the install script and everything should be installed fine by following the onscreen instructions.
 
-### Packer.nvim 
+<br>
+
+### Packer.nvim (Plugin Manager)
 
 * -- You must run this or `PackerSync` whenever you make changes to your plugin configuration
 
@@ -33,3 +35,10 @@ For more information about NvChad visit [here.](https://github.com/siduck76/NvCh
 
 * -- Loads opt plugin immediately
 `:PackerLoad `
+
+> You can configure Neovim to automatically run :PackerCompile whenever plugins.lua is updated with an autocommand: placed in the `plugins.lua`.
+
+```
+vim.cmd([[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]])
+
+```
