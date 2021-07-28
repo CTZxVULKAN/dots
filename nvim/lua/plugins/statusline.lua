@@ -23,10 +23,11 @@ gls.left[1] = {
 gls.left[2] = {
     statusIcon = {
         provider = function()
-            return "  "
+            return " NVIM "
         end,
         highlight = {colors.statusline_bg, colors.nord_blue},
-        separator = "  ",
+        separator = " ",
+        --separator = "  ",
         separator_highlight = {colors.nord_blue, colors.lightbg}
     }
 }
@@ -44,7 +45,8 @@ gls.left[4] = {
         provider = {"FileName"},
         condition = condition.buffer_not_empty,
         highlight = {colors.white, colors.lightbg},
-        separator = " ",
+        separator = "  ",
+        --separator = " ",
         separator_highlight = {colors.lightbg, colors.lightbg2}
     }
 }
@@ -53,10 +55,11 @@ gls.left[5] = {
     current_dir = {
         provider = function()
             local dir_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":t")
-            return "  " .. dir_name .. " "
+            return "  " .. dir_name .. "  "
         end,
         highlight = {colors.grey_fg2, colors.lightbg2},
-        separator = " ",
+        separator = " ",
+        --separator = " ",
         separator_highlight = {colors.lightbg2, colors.statusline_bg}
     }
 }
@@ -156,10 +159,11 @@ gls.right[3] = {
 gls.right[4] = {
     viMode_icon = {
         provider = function()
-            return " "
+            return "  "
         end,
         highlight = {colors.statusline_bg, colors.red},
-        separator = " ",
+        separator = " ",
+        --separator = " ",--
         separator_highlight = {colors.red, colors.statusline_bg}
     }
 }
@@ -191,9 +195,10 @@ gls.right[5] = {
 gls.right[6] = {
     some_icon = {
         provider = function()
-            return " "
+            return "   "
         end,
-        separator = "",
+        separator = "",
+        --separator = "",
         separator_highlight = {colors.green, colors.lightbg},
         highlight = {colors.lightbg, colors.green}
     }
@@ -208,7 +213,7 @@ gls.right[7] = {
             if current_line == 1 then
                 return "  Top "
             elseif current_line == vim.fn.line("$") then
-                return "  Bot "
+                return "  End "
             end
             local result, _ = math.modf((current_line / total_line) * 100)
             return "  " .. result .. "% "
