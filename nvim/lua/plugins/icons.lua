@@ -113,6 +113,11 @@ icons.setup {
             color = colors.orange,
             name = "rpm"
         },
+        txt = {
+            icon = "",
+            color = colors.orange,
+            name = "txt"
+        },
         lua = {
             icon = "",
             color = colors.blue,
