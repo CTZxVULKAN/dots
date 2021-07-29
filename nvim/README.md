@@ -5,7 +5,7 @@ This config is based on [NvChad](https://github.com/siduck76/NvChad) with my own
 For more information about NvChad visit [here.](https://github.com/siduck76/NvChad/wiki#clone-my-setup)
 
 
-### Install Insctructions
+### Install Config 
 
 > Execute the install script and everything should be installed fine by following the onscreen instructions.
 
@@ -13,7 +13,17 @@ For more information about NvChad visit [here.](https://github.com/siduck76/NvCh
 ./install.sh
 ```
 
+### Install Dependencies 
+* **Pynvim** - python provider for neovim
+* **neovim** - node js provider for neovim
+* **xsel** - clipboard manager allows copy/paste globally
 
+> Run the following commands to install all dependencies. Use command `:checkhealth` to check wether all dependencies are install succesfully.
+```
+sudo pacman -S xsel 
+pip install pynvim
+npm i -g neovim / yarn global add neovim
+``` 
 ### Packer.nvim (Plugin Manager)
 
 * -- You must run this or `PackerSync` whenever you make changes to your plugin configuration
