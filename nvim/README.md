@@ -18,7 +18,7 @@ For more information about NvChad visit [here.](https://github.com/siduck76/NvCh
 * **neovim** - node js provider for neovim
 * **xsel** - clipboard manager allows copy/paste globally
 
-> Run the following commands to install all dependencies. Use command `:checkhealth` to check wether all dependencies are install succesfully.
+> Run the following commands to install all dependencies. Use command `:checkhealth` to check wether all dependencies are installed succesfully.
 ```
 sudo pacman -S xsel 
 pip install pynvim
