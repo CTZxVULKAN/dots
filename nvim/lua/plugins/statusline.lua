@@ -1,5 +1,6 @@
 local present1, gl = pcall(require, "galaxyline")
 local present2, condition = pcall(require, "galaxyline.condition")
+
 if not (present1 or present2) then
     return
 end
@@ -41,14 +42,17 @@ gls.left[3] = {
 }
 
 gls.left[4] = {
-    FileName = {
-        provider = {"FileName"},
-        condition = condition.buffer_not_empty,
-        highlight = {colors.white, colors.lightbg},
-        separator = "  ",
-        --separator = " ",
-        separator_highlight = {colors.lightbg, colors.lightbg2}
-    }
+  FileName = {
+    provider = function()
+      local fileinfo = require'galaxyline.provider_fileinfo'
+      --(modified,readonly)
+      return fileinfo.get_current_file_name("", "")
+    end,
+    condition = condition.buffer_not_empty,
+    highlight = {colors.white, colors.lightbg},
+    separator = " ",
+    separator_highlight = {colors.lightbg, colors.lightbg2}
+  }
 }
 
 gls.left[5] = {
@@ -221,3 +225,4 @@ gls.right[7] = {
         highlight = {colors.green, colors.lightbg}
     }
 }
+
