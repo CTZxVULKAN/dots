@@ -2,8 +2,8 @@
 ;yay -S nerd-fonts-complete
 [colors]
 
-;background = #1e2127
-background = #131a21
+background = #1e2127
+;background = #131a21
 background-alt = #FD7272
 foreground = #dfdfdf
 foreground-alt = #555
