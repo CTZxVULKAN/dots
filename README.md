@@ -19,8 +19,6 @@ A collection of my dot files.
 * Polybar (Status bar)
 * Dunst (Notification Daemon)
 * Pcmanfm (File browser)
-* Nitrogen (Wallpaper)
-* Lxappearance (GTK theme manager)
 * Picom (Compositor) 
 * w3m (Neofetch backend)
 * Xautolock (Lockscreen)
@@ -30,7 +28,7 @@ A collection of my dot files.
 ```
 
 ```html
-sudo pacman -S kitty rofi dunst nitrogen lxappearance-gtk3 xautolock pamixer firefox pcmanfm-gtk3
+sudo pacman -S kitty rofi dunst xautolock pamixer firefox pcmanfm-gtk3
 yay -S polybar picom-jonaburg-git i3-scrot i3exit w3m
 ```
 
@@ -88,10 +86,13 @@ yay -S ttf-windows ttf-roboto-slab ttf-apple-emoji ttf-fira-code nerd-fonts-comp
 ```
 * Tela (Icon pack for rofi)
 * Flat-Remix-Gtk ( GTK3/4 theme)
+* Lxappearance (GTK theme manager)
+* Nitrogen (Wallpaper Settings)
+
 ```
 
 ```
-yay -S tela-icon-theme flat-remix-gtk
+yay -S tela-icon-theme flat-remix-gtk lxappearance-gtk3 nitrogen
 ```
 
 * Manual Installation of themes and icons
