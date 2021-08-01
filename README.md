@@ -27,13 +27,11 @@ A collection of my dot files.
 * i3exit (Exit script including blurlock)
 * i3-scrot (Screenshot utility)
 * Pamixer (Volume control for pulse audio)
-* Tela (Icon pack for rofi)
-* Flat-Remix-Gtk ( GTK3/4 theme)
 ```
 
 ```html
 sudo pacman -S kitty rofi dunst nitrogen lxappearance-gtk3 xautolock pamixer firefox pcmanfm-gtk3
-yay -S polybar picom-jonaburg-git i3-scrot tela-icon-theme flat-remix-gtk i3exit w3m
+yay -S polybar picom-jonaburg-git i3-scrot i3exit w3m
 ```
 
 * **Software suite**
@@ -80,9 +78,27 @@ sudo pacman -S noto-fonts ttf-droid ttf-dejavu ttf-opensans ttf-ubuntu-font-fami
 yay -S ttf-windows ttf-roboto-slab ttf-apple-emoji ttf-fira-code nerd-fonts-complete siji-git ttf-unifont 
 ```
 
-* Manual Installation of Fonts
+* Manual installation of fonts
 
-Copy the fonts to `~/.local/share/fonts`  & run `fc-cache -f -v` to rebuild your fonts cache.
+> Copy the fonts to `~/.local/share/fonts`  & run `fc-cache -f -v` to rebuild your fonts cache.
+
+
+* **Theming**
+
+```
+* Tela (Icon pack for rofi)
+* Flat-Remix-Gtk ( GTK3/4 theme)
+```
+
+```
+yay -S tela-icon-theme flat-remix-gtk
+```
+
+* Manual Installation of themes and icons
+
+> Extract all contents under `themes` & `icons` folders in the repo. Copy the extracted themes to `~/.themes`  & icons to `~/.icons`.
+
+
 
 ## Drivers & Devices
 
