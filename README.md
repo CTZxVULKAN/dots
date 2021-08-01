@@ -84,11 +84,14 @@ yay -S ttf-windows ttf-roboto-slab ttf-apple-emoji ttf-fira-code nerd-fonts-comp
 * **Theming**
 
 ```
-* Tela (Icon pack for rofi)
-* Flat-Remix-Gtk ( GTK3/4 theme)
 * Lxappearance (GTK theme manager)
 * Nitrogen (Wallpaper Settings)
+* Tela (Icon pack for rofi)
+* Flat-Remix-Gtk ( GTK3/4 theme)
+```
 
+```
+yay -S lxappearance-gtk3 nitrogen
 ```
 
 ```
