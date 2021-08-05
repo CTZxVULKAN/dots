@@ -132,7 +132,9 @@ map("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 map("i", "<CR>", "v:lua.completions()", {expr = true})
 
 -- nvimtree
-map("n", "<Leader>e", ":NvimTreeToggle<CR>", opt)
+--map("n", "<Leader>e", ":NvimTreeToggle<CR>", opt)
+map("n", "<C-n>", ":NvimTreeToggle<CR>", opt)
+
 
 -- format code
 map("n", "<Leader>fm", ":Neoformat<CR>", opt)
