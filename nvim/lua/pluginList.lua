@@ -70,9 +70,13 @@ return packer.startup(
             "kabouzeid/nvim-lspinstall",
             event = "BufRead"
         }
-      --better jsx tabbing support
+      --better support for jsx
         use {
             "chemzqm/vim-jsx-improve"
+        }
+      --better syntaxing and intendation support for all languages 
+        use {
+            "sheerun/vim-polyglot"
         }
 
         use {
