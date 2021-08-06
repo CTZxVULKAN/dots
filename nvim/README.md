@@ -66,16 +66,16 @@ sudo npm i -g prettier
 
 | Fucntion     | Binding        |
 |--------------|----------------|
+| Escape  | Ctrl + c       |
 | New file     | Space + f + n  |
 | Save file    | Ctrl + s       |
 | Save & Quit  | Ctrl + q       |
-| Copy all   | Ctrl + a      |
 | Save & Quit buffer   | Ctrl + x       |
-| Escape  | Ctrl + c       |
-| File Viewer  | Ctrl + n      |
-| Browse Files | Space + f  + f    |
+| Copy all   | Ctrl + a      |
+| File Explorer  | Space + f + e     |
+| Fuzzy Finder | Space + f  + f    |
 | Browse Commits | Space + cm      |
 | Switch Buffers | Tab / Shift + Tab      |
-| Format / Prettify code | Space + fm    |
+| Format / Prettify code | Space + f + m    |
 | Rename all instances | Space + r + n   |
 
