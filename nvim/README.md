@@ -55,9 +55,14 @@ vim.cmd([[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]])
 ### Install Intellisense 
 > To check available languages use :LspInstall `<Tab>`
 ```
-:LspInstall python json cpp html typescript css bash lua
+:LspInstall python json cpp html typescript css bash lua rust
 ```
+### Install code formatters 
+> For information visit [here.](https://github.com/sbdchd/neoformat#supported-filetypes)
+```
+sudo npm i -g prettier
 
+```
 ### Quick Keybindings
 
 | Fucntion     | Binding        |
@@ -68,7 +73,7 @@ vim.cmd([[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]])
 | Copy all   | Ctrl + a      |
 | Save & Quit buffer   | Ctrl + b       |
 | Escape  | Ctrl + c       |
-| File Viewer  | Space + e      |
+| File Viewer  | Ctrl + n      |
 | Browse Files | Space + f  + f    |
 | Browse Commits | Space + cm      |
 | Switch Buffers | Tab / Shift + Tab      |
