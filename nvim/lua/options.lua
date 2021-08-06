@@ -34,6 +34,9 @@ opt.expandtab = true
 opt.shiftwidth = 2
 opt.smartindent = true
 
+--improved jsx support
+g.jsx_improve_javascriptreact = 1
+
 -- go to previous/next line with h,l,left arrow and right arrow
 -- when cursor reaches end/beginning of line
 opt.whichwrap:append("<>hl")
