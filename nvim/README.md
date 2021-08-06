@@ -70,7 +70,7 @@ sudo npm i -g prettier
 | Save file    | Ctrl + s       |
 | Save & Quit  | Ctrl + q       |
 | Copy all   | Ctrl + a      |
-| Save & Quit buffer   | Ctrl + b       |
+| Save & Quit buffer   | Ctrl + x       |
 | Escape  | Ctrl + c       |
 | File Viewer  | Ctrl + n      |
 | Browse Files | Space + f  + f    |
