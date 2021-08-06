@@ -30,9 +30,9 @@ map("", "<Down>", 'v:count ? "j" : "gj"', {expr = true})
 map("", "<Up>", 'v:count ? "k" : "gk"', {expr = true})
 
 -- OPEN TERMINALS --
-map("n", "<C-l>", ":vnew +terminal | setlocal nobuflisted <CR>", opt) -- term over right
-map("n", "<C-x>", ":10new +terminal | setlocal nobuflisted <CR>", opt) --  term bottom
-map("n", "<C-t>t", ":<Cmd> terminal <CR>", opt) -- term buffer
+--map("n", "<C-l>", ":vnew +terminal | setlocal nobuflisted <CR>", opt) -- term over right
+--map("n", "<C-x>", ":10new +terminal | setlocal nobuflisted <CR>", opt) --  term bottom
+--map("n", "<C-t>t", ":<Cmd> terminal <CR>", opt) -- term buffer
 
 --QUICK BINDINGS--
 
