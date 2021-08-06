@@ -61,7 +61,6 @@ vim.cmd([[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]])
 > For information visit [here.](https://github.com/sbdchd/neoformat#supported-filetypes)
 ```
 sudo npm i -g prettier
-
 ```
 ### Quick Keybindings
 
