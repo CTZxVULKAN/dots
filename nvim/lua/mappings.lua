@@ -45,7 +45,7 @@ map("n", "<C-q>", ":wq! <CR>", opt)
 
 --save&close buffer--
 
-map("n", "<C-b>", ":bw! <CR>", opt)
+map("n", "<C-x>", ":bw! <CR>", opt)
 
 -- ESC --
 map("n", "<C-c>", ": <ESC>")
