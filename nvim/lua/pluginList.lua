@@ -70,6 +70,10 @@ return packer.startup(
             "kabouzeid/nvim-lspinstall",
             event = "BufRead"
         }
+      --better jsx tabbing support
+        use {
+            "chemzqm/vim-jsx-improve"
+        }
 
         use {
             "neovim/nvim-lspconfig",
@@ -111,7 +115,7 @@ return packer.startup(
             }
         }
 
-        use {
+       use {
             "sbdchd/neoformat",
             cmd = "Neoformat"
         }
