@@ -1,7 +1,7 @@
 # Hardened Firefox
 
 
-###  Config
+###  Configuration
 > The following section covers settings to be modified in the `about:config` for hardened security
 
 * Web block RTC
@@ -96,3 +96,11 @@ toolkit.telemetry.unified = false
 toolkit.telemetry.updateping.enabled = false
 toolkit.telemetry.shutdownpingsender.enabled = false
 ```
+
+
+### Extensions
+
+* Ublock Origin
+* Decentraleyes 
+* Cookie Auto Delete
+* User Agent Switcher
