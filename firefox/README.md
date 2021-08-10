@@ -1,6 +1,14 @@
 # Hardened Firefox
 
 
+### Extensions
+
+* Ublock Origin
+* Decentraleyes 
+* Cookie Auto Delete
+* User Agent Switcher
+
+
 ###  Configuration
 > The following section covers settings to be modified in the `about:config` for hardened security
 
@@ -97,10 +105,3 @@ toolkit.telemetry.updateping.enabled = false
 toolkit.telemetry.shutdownpingsender.enabled = false
 ```
 
-
-### Extensions
-
-* Ublock Origin
-* Decentraleyes 
-* Cookie Auto Delete
-* User Agent Switcher
