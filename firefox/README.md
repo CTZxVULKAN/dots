@@ -45,3 +45,26 @@ security.tls.enable_0rtt_data = false
 ```
 browser.formfil.enable = false
 ```
+
+* Disable disk caching
+
+```
+browser.cache.disk.enable = false
+browser.cache.disk_cache_ssl = false
+browser.cache.memory.enable = false
+browser.cache.offline.enable = false
+browser.cache.insecure.enable = false
+
+```
+
+* Disable geolocation
+
+```
+geo.enabled = false
+```
+
+* Disable extension discovery
+
+```
+plugin.scan.plid.all = false
+```
