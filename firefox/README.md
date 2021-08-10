@@ -32,6 +32,7 @@ security.ssl.require_safe_negotiation = true
 
 ```
 security.tls.version.min = 3
+security.ssl.enable_false_start = false
 ```
 
 * Forward secrecy
@@ -54,7 +55,6 @@ browser.cache.disk_cache_ssl = false
 browser.cache.memory.enable = false
 browser.cache.offline.enable = false
 browser.cache.insecure.enable = false
-
 ```
 
 * Disable geolocation
@@ -67,4 +67,32 @@ geo.enabled = false
 
 ```
 plugin.scan.plid.all = false
+```
+
+* Enable first-party isolation
+
+```
+privacy.firstparty.isolate = true
+```
+
+* Disable webgl
+```
+webgl.disabled = true
+```
+
+* Disable Telemetry 
+
+```
+browser.newtabpage.activity-stream.feeds.telemetry browser.newtabpage.activity-stream.telemetry = false
+browser.pingcentre.telemetry = false
+devtools.onboarding.telemetry-logged = false
+media.wmf.deblacklisting-for-telemetry-in-gpu-process = false
+toolkit.telemetry.archive.enabled = false
+toolkit.telemetry.bhrping.enabled = false
+toolkit.telemetry.firstshutdownping.enabled = false
+toolkit.telemetry.hybridcontent.enabled = false
+toolkit.telemetry.newprofileping.enabled = false
+toolkit.telemetry.unified = false
+toolkit.telemetry.updateping.enabled = false
+toolkit.telemetry.shutdownpingsender.enabled = false
 ```
