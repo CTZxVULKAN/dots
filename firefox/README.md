@@ -1,1 +1,1 @@
-### Hardened Firefox
+# Hardened Firefox
