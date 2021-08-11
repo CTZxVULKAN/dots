@@ -23,6 +23,11 @@ media.peerconnection.enabled = false
 ```
 privacy.resistfingerprinting = true
 ```
+* Letterboxing
+
+```
+privacy.resistFingerprinting.letterboxing", true
+```
 
 * Disable 3DES Cypher for security flaws
 
