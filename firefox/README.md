@@ -27,9 +27,10 @@ privacy.resistfingerprinting = true
 
 ```
 privacy.resistFingerprinting.letterboxing = true
-privacy.resistFingerprinting.letterboxing.dimensions = 1400x740 
+privacy.resistFingerprinting.letterboxing.dimensions = 1400x740,990x715,680x730 
 ```
-> Dimensions format : width x height
+> Dimensions format : width1 x height1 , width2xheight2 , width3xheight3
+> Dimensions are set with respect to : Normal layout , floating layout , tabbed layout
 
 * Disable 3DES Cypher for security flaws
 
