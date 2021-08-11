@@ -26,8 +26,10 @@ privacy.resistfingerprinting = true
 * Letterboxing
 
 ```
-privacy.resistFingerprinting.letterboxing", true
+privacy.resistFingerprinting.letterboxing = true
+privacy.resistFingerprinting.letterboxing.dimensions = 1400x740 
 ```
+> Dimensions format : width x height
 
 * Disable 3DES Cypher for security flaws
 
