@@ -62,6 +62,23 @@ security.tls.enable_0rtt_data = false
 ```
 browser.formfil.enable = false
 ```
+* Disable preloading of auto-complete urls
+
+```
+browser.urlbar.speculativeConnect.enabled = false
+```
+
+* Prevent auto download of Content Decryption Module by Google
+
+```
+media.gmp-widevinecdm.enabled = fasle
+```
+
+* Prevent websites from interacting with Mic & Camera
+
+```
+media.navigator.enabled = false 
+```
 
 * Disable disk caching
 
