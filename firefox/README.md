@@ -140,7 +140,11 @@ privacy.firstparty.isolate = true
 ```
 webgl.disabled = true
 ```
+* Block Crypto mining
 
+```
+privacy.trackingprotection.cryptomining.enabled = true
+```
 * Disable PDFs to execute js
 
 ```
