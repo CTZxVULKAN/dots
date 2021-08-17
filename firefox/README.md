@@ -101,6 +101,7 @@ network.predictor.enabled = false
 network.predictor.enable-prefetch = false
 network.prefetch-next = false
 ```
+> * Enabling `network.predictor.enabled` & `network.prefetch-next` may slow down loading of websites but will prevent other websites from gathering small infromation about you. 
 
 * Disable disk caching
 
