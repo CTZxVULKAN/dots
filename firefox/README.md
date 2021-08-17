@@ -124,7 +124,12 @@ geo.enabled = false
 ```
 plugin.scan.plid.all = false
 ```
+* Disable Pocket by Mozilla 
 
+```
+extensions.pocket.enabled = false
+browser.newtabpage.activity-stream.section.highlights.includePocket = false
+```
 * Enable first-party isolation
 
 ```
