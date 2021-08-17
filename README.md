@@ -214,7 +214,20 @@ sudo pacman -S artix-archlinux-support
 sudo reboot
 sudo pacman -Syyy
 ```
->* After installing `artix-archlinux-support` follow all the onscreen instructions.
+>* After installing `artix-archlinux-support` add all the following to your `pacman.conf`.
+
+```
+ # ARCH
+ [extra]
+ Include = /etc/pacman.d/mirrorlist-arch
+
+ [community]
+ Include = /etc/pacman.d/mirrorlist-arch
+
+ [multilib]
+ Include = /etc/pacman.d/mirrorlist-arch
+ 
+```
 
 *  **PGP Keys**
 
