@@ -101,7 +101,7 @@ network.predictor.enabled = false
 network.predictor.enable-prefetch = false
 network.prefetch-next = false
 ```
-> * Enabling `network.predictor.enabled` & `network.prefetch-next` may slow down loading of websites but will prevent other websites from gathering small infromation about you. 
+> * Enabling `network.predictor.enabled` & `network.prefetch-next` may slow down loading of websites but will prevent other websites from gathering small infromation about you. The performance difference is minimal. 
 
 * Disable disk caching
 
@@ -140,6 +140,13 @@ privacy.firstparty.isolate = true
 ```
 webgl.disabled = true
 ```
+
+* Disable PDFs to execute js
+
+```
+pdfjs.enableScripting = false
+```
+> * This feature will break PDFs with built in forms.
 
 * Disable Telemetry 
 
