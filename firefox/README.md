@@ -51,7 +51,7 @@ security.tls.version.min = 3
 security.ssl.enable_false_start = false
 ```
 
-* Forward secrecy
+* Improve forward secrecy
 
 ```
 security.tls.enable_0rtt_data = false
@@ -92,14 +92,14 @@ beacon.enabled = false
 browser.safebrowsing.downloads.remote.enabled  = false
 ```
 
-* DIsable prefetching pages
+* Disable prefetching pages
 
 ```
-    network.dns.disablePrefetch = true
-    network.dns.disablePrefetchFromHTTPS = true
-    network.predictor.enabled = false
-    network.predictor.enable-prefetch = false
-    network.prefetch-next = false
+network.dns.disablePrefetch = true
+network.dns.disablePrefetchFromHTTPS = true
+network.predictor.enabled = false
+network.predictor.enable-prefetch = false
+network.prefetch-next = false
 ```
 
 * Disable disk caching
