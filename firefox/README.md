@@ -71,13 +71,35 @@ browser.urlbar.speculativeConnect.enabled = false
 * Prevent auto download of Content Decryption Module by Google
 
 ```
-media.gmp-widevinecdm.enabled = fasle
+media.gmp-widevinecdm.enabled = false
 ```
 
 * Prevent websites from interacting with Mic & Camera
 
 ```
 media.navigator.enabled = false 
+```
+
+* Prevent FF from sending addition info to sites
+
+```
+beacon.enabled = false
+```
+
+* Disable Google scanning downloads for safe browsing api 
+
+```
+browser.safebrowsing.downloads.remote.enabled  = false
+```
+
+* DIsable prefetching pages
+
+```
+    network.dns.disablePrefetch = true
+    network.dns.disablePrefetchFromHTTPS = true
+    network.predictor.enabled = false
+    network.predictor.enable-prefetch = false
+    network.prefetch-next = false
 ```
 
 * Disable disk caching
