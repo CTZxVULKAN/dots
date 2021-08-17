@@ -211,10 +211,8 @@ As of now `arch-repos` have been disabled by default. To enable them [view](http
 
 ```
 sudo pacman -S artix-archlinux-support
-sudo reboot
-sudo pacman -Syyy
 ```
->* After installing `artix-archlinux-support` add all the following to your `pacman.conf`.
+>* After installing  add  the following to your `pacman.conf` followed by `sudo pacman -Syyy && sudo reboot`.
 
 ```
  # ARCH
@@ -225,9 +223,9 @@ sudo pacman -Syyy
  Include = /etc/pacman.d/mirrorlist-arch
 
  [multilib]
- Include = /etc/pacman.d/mirrorlist-arch
- 
+ Include = /etc/pacman.d/mirrorlist-arch 
 ```
+
 
 *  **PGP Keys**
 
