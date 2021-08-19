@@ -129,7 +129,7 @@ dom.gamepad.enabled = false
 browser.display.use_document_fonts = 0
 ```
 > * This will prevent websites from using system fonts and resolve to ugly default fonts. Incase you want better fonts on websites but dont want to reveal your system fonts the following extension is suggested
-> [BP Block Font Fingerprint](https://addons.mozilla.org/en-US/firefox/addon/bp-block-font-fingerprint/)
+> * [BP Block Font Fingerprint](https://addons.mozilla.org/en-US/firefox/addon/bp-block-font-fingerprint/)
 
 
 * Disable speech recognition and synthesis
