@@ -201,6 +201,7 @@ network.dns.disablePrefetchFromHTTPS = true
 network.predictor.enabled = false
 network.predictor.enable-prefetch = false
 network.prefetch-next = false
+network.http.speculative-parallel-limit = 0 
 ```
 > * Enabling `network.predictor.enabled` & `network.prefetch-next` may slow down loading of websites but will prevent other websites from gathering small infromation about you. The performance difference is minimal. 
 
