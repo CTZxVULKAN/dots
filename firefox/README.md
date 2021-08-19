@@ -232,11 +232,12 @@ browser.search.geoip.url = ""
 ```
 plugin.scan.plid.all = false
 ```
-* Disable Pocket by Mozilla 
+* Disable Pocket by Mozilla & Extension recommendation
 
 ```
 extensions.pocket.enabled = false
 browser.newtabpage.activity-stream.section.highlights.includePocket = false
+browser.discovery.enabled = false
 ```
 * Enable first-party isolation
 
