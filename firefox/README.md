@@ -48,6 +48,7 @@ security.ssl.require_safe_negotiation = true
 
 ```
 dom.netinfo.enabled = false
+network.allow-experiments = false
 ```
 * TLS
 
@@ -186,6 +187,17 @@ privacy.trackingprotection.cryptomining.enabled = true
 pdfjs.enableScripting = false
 ```
 > * This feature will break PDFs with built in forms.
+
+* Disable Remote Debugging 
+
+```
+devtools.debugger.remote-enabled = false
+devtools.chrome.enabled = false
+devtools.debugger.force-local = true
+devtools.webide.enabled = false
+devtools.webide.autoinstallADBHelper = false 
+devtools.webide.autoinstallFxdtAdapters = false
+```
 
 * Disable Telemetry 
 
