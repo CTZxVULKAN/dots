@@ -79,6 +79,13 @@ browser.urlbar.speculativeConnect.enabled = false
 ```
 media.gmp-widevinecdm.enabled = false
 ```
+
+* Disable DOM Timing API
+
+```
+dom.enable_performance = false
+dom.enable_user_timing = false
+```
 * Disable Unity Web Audio API
 
 ```
