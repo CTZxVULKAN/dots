@@ -289,5 +289,6 @@ toolkit.telemetry.newprofileping.enabled = false
 toolkit.telemetry.unified = false
 toolkit.telemetry.updateping.enabled = false
 toolkit.telemetry.shutdownpingsender.enabled = false
+loop.logDomains = false
 ```
 
