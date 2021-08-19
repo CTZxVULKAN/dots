@@ -92,6 +92,7 @@ media.gmp-widevinecdm.enabled = false
 ```
 dom.enable_performance = false
 dom.enable_user_timing = false
+dom.enable_resource_timing = false
 ```
 
 * Disable Network API
