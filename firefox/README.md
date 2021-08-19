@@ -119,7 +119,11 @@ dom.webaudio.enabled = false
 ```
 dom.gamepad.enabled = false
 ```
+* Prevent font enumeration
 
+```
+browser.display.use_document_fonts = 0
+```
 * Disable speech recognition and synthesis
 
 ```
@@ -157,8 +161,13 @@ beacon.enabled = false
 network.manage-offline-status = false
 ```
 
-* Disable Google scanning downloads for safe browsing api 
+* Disable crash reports
+```
+browser.tabs.crashReporting.sendReport = false
+browser.crashReports.unsubmittedCheck.enabled = false
+```
 
+* Disable Google scanning downloads for safe browsing api 
 ```
 browser.safebrowsing.downloads.remote.enabled  = false
 ```
