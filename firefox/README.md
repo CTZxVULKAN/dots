@@ -71,6 +71,8 @@ browser.formfil.enable = false
 * Disable preloading of auto-complete urls
 
 ```
+browser.fixup.alternate.enabled = false
+browser.fixup.hide_user_pass = true 
 browser.urlbar.speculativeConnect.enabled = false
 ```
 
@@ -149,12 +151,31 @@ device.sensors.enabled = false
 ```
 beacon.enabled = false
 ```
+* Prevent Websites & FF from detecting offline/online status
+
+```
+network.manage-offline-status = false
+```
 
 * Disable Google scanning downloads for safe browsing api 
 
 ```
 browser.safebrowsing.downloads.remote.enabled  = false
 ```
+
+* Disable VideoStats
+
+```
+media.video_stats.enabled = false
+```
+
+* Dont reveal build ID
+
+```
+general.buildID.override = 20100101
+browser.startup.homepage_override.buildID = 20100101
+```
+
 
 * Disable prefetching pages
 
