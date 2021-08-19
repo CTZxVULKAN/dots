@@ -3,13 +3,14 @@
 ### Sources 
 
 * [Pyllyukko's User.js ](https://github.com/pyllyukko/user.js/blob/master/user.js)
+* [arkenfox user.js](https://github.com/arkenfox/user.js/blob/master/user.js)
 
 ### Extensions
 
-* Ublock Origin
-* Decentraleyes 
-* Cookie Auto Delete
-* User Agent Switcher
+* [Ublock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+* [Decentraleyes](https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/) 
+* [Cookie Auto Delete](https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/)
+* [User Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/)
 
 
 ###  Configuration
