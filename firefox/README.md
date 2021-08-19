@@ -166,6 +166,13 @@ network.manage-offline-status = false
 browser.tabs.crashReporting.sendReport = false
 browser.crashReports.unsubmittedCheck.enabled = false
 ```
+* Disable health reports
+
+```
+datareporting.policy.dataSubmissionEnabled = false 
+datareporting.healthreport.service.enabled = false
+datareporting.healthreport.uploadEnabled = false
+```
 
 * Disable Google scanning downloads for safe browsing api 
 ```
