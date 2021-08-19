@@ -92,6 +92,12 @@ dom.enable_user_timing = false
 ```
 dom.network.enabled = false
 ```
+
+* Disable battery api
+
+```
+dom.battery.enabled = false
+```
 * Disable Unity Web Audio API
 
 ```
