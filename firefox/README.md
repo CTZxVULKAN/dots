@@ -74,6 +74,13 @@ browser.formfil.enable = false
 browser.urlbar.speculativeConnect.enabled = false
 ```
 
+* Disable pinging URIs specified in HTML
+
+```
+browser.send_pings = false
+browser.send_pings.require_same_host = true
+```
+
 * Prevent auto download of Content Decryption Module by Google
 
 ```
