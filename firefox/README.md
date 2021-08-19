@@ -1,5 +1,8 @@
 # Hardened Firefox
 
+### Sources 
+
+* [Pyllyukko's User.js ](https://github.com/pyllyukko/user.js/blob/master/user.js)
 
 ### Extensions
 
