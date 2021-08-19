@@ -117,7 +117,14 @@ media.webspeech.synth.enabled = false
 media.navigator.enabled = false 
 camera.control.face_detection.enabled = false 
 ```
+* Prevent capture of local camera and microphone streams
 
+```
+media.navigator.enabled = false
+media.navigator.video.enabled = false
+media.getusermedia.screensharing.enabled = false
+media.getusermedia.audiocapture.enabled = false
+```
 * Block sensors
 
 ```
