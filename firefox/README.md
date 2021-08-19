@@ -44,6 +44,11 @@ security.ssl3.rsa_des_ede3_sha = false
 security.ssl.require_safe_negotiation = true
 ```
 
+* Prevent network information leakage via javascript
+
+```
+dom.netinfo.enabled = false
+```
 * TLS
 
 ```
@@ -73,14 +78,37 @@ browser.urlbar.speculativeConnect.enabled = false
 ```
 media.gmp-widevinecdm.enabled = false
 ```
+* Disable Unity Web Audio API
+
+```
+dom.webaudio.enabled = false
+```
+* Disable gamepad API to prevent USB device enumeration
+
+```
+dom.gamepad.enabled = false
+```
+
+* Disable speech recognition and synthesis
+
+```
+media.webspeech.recognition.enable = false
+media.webspeech.synth.enabled = false
+```
 
 * Prevent websites from interacting with Mic & Camera
 
 ```
 media.navigator.enabled = false 
+camera.control.face_detection.enabled = false 
 ```
 
-* Prevent FF from sending addition info to sites
+* Block sensors
+
+```
+device.sensors.enabled = false
+```
+* Prevent FF from sending additional info to sites
 
 ```
 beacon.enabled = false
