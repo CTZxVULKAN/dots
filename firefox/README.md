@@ -210,6 +210,8 @@ privacy.firstparty.isolate = true
 * Disable webgl
 ```
 webgl.disabled = true
+webgl.disable-extensions = true
+webgl.enable-debug-renderer-info = false
 ```
 * Block Crypto mining
 
