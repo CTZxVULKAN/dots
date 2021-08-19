@@ -86,11 +86,18 @@ media.gmp-widevinecdm.enabled = false
 dom.enable_performance = false
 dom.enable_user_timing = false
 ```
+
+* Disable Network API
+
+```
+dom.network.enabled = false
+```
 * Disable Unity Web Audio API
 
 ```
 dom.webaudio.enabled = false
 ```
+
 * Disable gamepad API to prevent USB device enumeration
 
 ```
