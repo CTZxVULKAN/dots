@@ -146,6 +146,12 @@ browser.cache.insecure.enable = false
 ```
 geo.enabled = false
 ```
+* Prevent search engienes from GeoIP lookup instead use a preset region
+
+```browser.search.countryCode = "US"
+browser.search.region = "US"
+browser.search.geoip.url = ""
+```
 
 * Disable extension discovery
 
