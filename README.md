@@ -68,11 +68,12 @@ yay -S l3afpad zathura element-desktop signal-desktop zathura-pdf-mupdf brave-bi
 * ttf-fira-code
 * siji-git
 * ttf-unifont 
+* ttf-font-awesome
 * nerd-fonts-complete
 ```
 
 ```html
-sudo pacman -S noto-fonts ttf-droid ttf-dejavu ttf-opensans ttf-ubuntu-font-family
+sudo pacman -S noto-fonts ttf-droid ttf-dejavu ttf-opensans ttf-ubuntu-font-family ttf-font-awesome
 yay -S ttf-windows ttf-roboto-slab ttf-apple-emoji ttf-fira-code nerd-fonts-complete siji-git ttf-unifont 
 ```
 
