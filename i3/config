@@ -60,9 +60,14 @@ exec_always --no-startup-id fix_xcursor
 #pactl set-default-sink 1
 #make vol.sh executable
 #yay -S pamixer
-bindsym XF86AudioRaiseVolume exec --no-startup-id $HOME/.config/i3/vol.sh +5% && notify-send 'Volume:'$(pamixer --get-volume-human) # increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id $HOME/.config/i3/vol.sh -5% && notify-send 'Volume:'$(pamixer --get-volume-human)  # decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id $HOME/.config/i3/vol.sh mute      # mute sound
+
+#bindsym XF86AudioRaiseVolume exec --no-startup-id $HOME/.config/i3/vol.sh +5% && notify-send 'Volume:'$(pamixer --get-volume-human) # increase sound volume
+#bindsym XF86AudioLowerVolume exec --no-startup-id $HOME/.config/i3/vol.sh -5% && notify-send 'Volume:'$(pamixer --get-volume-human)  # decrease sound volume
+#bindsym XF86AudioMute exec --no-startup-id $HOME/.config/i3/vol.sh mute      # mute sound
+
+bindsym XF86AudioRaiseVolume exec --no-startup-id $HOME/.config/i3/vol.sh +5% && notify-send --hint=string:x-dunst-stack-tag:volume 'Volume:'$(pamixer --get-volume-human)  
+bindsym XF86AudioLowerVolume exec --no-startup-id $HOME/.config/i3/vol.sh -5% && notify-send --hint=string:x-dunst-stack-tag:volume 'Volume:'$(pamixer --get-volume-human)  # decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id $HOME/.config/i3/vol.sh mute && notify-send --hint=string:x-dunst-stack-tag:volume Muted    # mute sound
 
 #Automounting usb devices
 exec --no-startup-id udiskie -a 
