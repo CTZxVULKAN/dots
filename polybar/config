@@ -316,6 +316,6 @@ content-padding = 0
 content-background = ${colors.background}
 content-foreground = ${colors.white_pepper}
 
-click-left = rofi -modi drun -show drun -font "Hack 20" -icon-theme "Tela" -show-icons
+click-left = rofi -display-drun ""  -modi drun -show drun -font "Hack 20" -icon-theme "Tela" -show-icons
 
 ; vim:ft=dosini
