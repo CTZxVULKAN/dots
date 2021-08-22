@@ -39,7 +39,11 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id rofi -modi drun -show drun -font "Hack 20" -icon-theme "Tela" -show-icons
+
+bindsym $mod+d exec --no-startup-id rofi -display-drun "" -modi drun -show drun -font "Hack 20" -icon-theme "Tela" -show-icons
+
+
+
 
 #auto start important apps 
 bindsym $mod+t exec --no-startup-id pkill picom
@@ -56,8 +60,8 @@ exec_always --no-startup-id fix_xcursor
 #pactl set-default-sink 1
 #make vol.sh executable
 #yay -S pamixer
-bindsym XF86AudioRaiseVolume exec --no-startup-id $HOME/.config/i3/vol.sh +5% && notify-send 'Volume:'$(pamixer --get-volume) # increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id $HOME/.config/i3/vol.sh -5% && notify-send 'Volume:'$(pamixer --get-volume)  # decrease sound volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id $HOME/.config/i3/vol.sh +5% && notify-send 'Volume:'$(pamixer --get-volume-human) # increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id $HOME/.config/i3/vol.sh -5% && notify-send 'Volume:'$(pamixer --get-volume-human)  # decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id $HOME/.config/i3/vol.sh mute      # mute sound
 
 #Automounting usb devices
@@ -247,7 +251,7 @@ mode "resize" {
 }
 
 # Lock screen
-bindsym $mod+9 exec --no-startup-id blurlock
+bindsym $mod+9 exec --no-startup-id blurlock 
 
 
 
@@ -330,6 +334,7 @@ mode "$mode_gaps_outer" {
 bindsym $mod+x exec i3lock
 
 #Keybinding fot terminal
+
 bindsym $mod+F1 exec kitty
 
 #Keybinding for file explorer
@@ -343,7 +348,7 @@ bindsym $mod+F4 exec brave
 bindsym $mod+F5 exec blueman-manager
 bindsym $mod+F6 exec pavucontrol
 
-#Keybinding for text editor
+#text editor
 bindsym $mod+F7 exec l3afpad
 
 #polybar launch script
