@@ -134,9 +134,14 @@ sudo reboot
 sudo pacman -S pulseaudio pulseaudio-alsa pulseaudio-bluetooth alsa-utils pavucontrol
 sudo pacman -S bluez bluez-openrc bluez-utils bluez-libs 
 yay -S bluez-firmware blueman
-pactl set-default-sink 1
 sudo rc-update add bluetoothd default
 sudo reboot
+```
+> * You may have to change your sink in order to get the volume working use the following commands to change the sink : 
+
+```
+pactl list sinks
+pactl set-default-sink <desired-sink-no.>
 ```
 
 * Wifi 
