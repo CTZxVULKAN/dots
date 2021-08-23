@@ -16,3 +16,9 @@ yay -S i3lock-color
 ```
 chmod +x blurlock i3exit
 ```
+
+2. Copy the binaries to the bin
+
+```
+sudo cp blurlock i3exit /usr/bin/
+```
