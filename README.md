@@ -23,13 +23,14 @@ A collection of my dot files.
 * w3m (Neofetch backend)
 * Xautolock (Lockscreen)
 * i3exit (Exit script including blurlock)
+* i3lock-color ( better i3lock )
 * i3-scrot (Screenshot utility)
 * Pamixer (Volume control for pulse audio)
 ```
 
 ```html
 sudo pacman -S kitty rofi dunst xautolock pamixer firefox pcmanfm-gtk3
-yay -S polybar picom-jonaburg-git i3-scrot i3exit w3m
+yay -S polybar picom-jonaburg-git i3-scrot i3exit i3lock-color w3m
 ```
 
 * **Software suite**
