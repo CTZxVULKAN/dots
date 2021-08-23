@@ -1,0 +1,60 @@
+#!/bin/bash
+# /usr/bin/blurlock
+# dependencies - i3lock-color
+BLANK='#00000000'
+CLEAR='#ffffff22'
+DEFAULT='#ff00ffcc'
+TEXT='#ee00eeee'
+WRONG='#880000bb'
+TEXT_COLOR='#FFFFFF'
+VERIFYING='#bb00bbbb'
+
+
+# take screenshot
+import -window root /tmp/screenshot.png
+
+# blur it
+convert /tmp/screenshot.png -blur 0x5 /tmp/screenshotblur.png
+rm /tmp/screenshot.png
+
+# lock the screen
+
+i3lock \
+--insidever-color=$CLEAR     \
+--ringver-color=$VERIFYING   \
+\
+--insidewrong-color=$CLEAR   \
+--ringwrong-color=$WRONG     \
+\
+--inside-color=$BLANK        \
+--ring-color=$DEFAULT        \
+--line-color=$BLANK          \
+--separator-color=$DEFAULT   \
+\
+--verif-color=$TEXT_COLOR          \
+--wrong-color=$TEXT_COLOR          \
+--time-color=$TEXT_COLOR           \
+--date-color=$TEXT_COLOR           \
+--layout-color=$TEXT_COLOR         \
+--keyhl-color=$WRONG         \
+--bshl-color=$WRONG          \
+\
+--screen 1                   \
+--blur 5                     \
+--clock                      \
+--no-modkey-text \
+--indicator                  \
+--time-str="%H:%M"           \
+--date-str="%A, %m %Y"       \
+--greeter-text="Type password to unlock" \
+--greeter-color=$TEXT_COLOR \
+--radius=100 \
+--verif-text="Verifying" \
+--wrong-text="Error" \
+
+
+
+# sleep 1 adds a small delay to prevent possible race conditions with suspend
+sleep 1
+
+exit 0
