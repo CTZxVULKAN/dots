@@ -1,4 +1,6 @@
 ## LockScreen
+The binaries in here are used for the lockscreen.
+You can install them from the [AUR](https://aur.archlinux.org/packages/i3exit/), the ones in here are my tweaked versions.
 
 ### Dependencies
 * i3lock-color
