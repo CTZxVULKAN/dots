@@ -2,3 +2,4 @@
 
 ### Dependencies
 * i3lock-color
+* xautolock
