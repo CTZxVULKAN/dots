@@ -4,6 +4,17 @@ This config is based on [NvChad](https://github.com/siduck76/NvChad) with my own
 <br>
 For more information about NvChad visit [here.](https://github.com/siduck76/NvChad/wiki#clone-my-setup)
 
+### Files modified : 
+* [bufferline.lua](https://github.com/CTZxVULKAN/dots/blob/main/nvim/lua/plugins/bufferline.lua)
+* [dashboard.lua](https://github.com/CTZxVULKAN/dots/blob/main/nvim/lua/plugins/dashboard.lua)
+* [icons.lua](https://github.com/CTZxVULKAN/dots/blob/main/nvim/lua/plugins/icons.lua)
+* [nvimtree.lua](https://github.com/CTZxVULKAN/dots/blob/main/nvim/lua/plugins/nvimtree.lua)
+* [statusline.lua](https://github.com/CTZxVULKAN/dots/blob/main/nvim/lua/plugins/statusline.lua)
+* [highlights.lua](https://github.com/CTZxVULKAN/dots/blob/main/nvim/lua/highlights.lua)
+* [mappings.lua](https://github.com/CTZxVULKAN/dots/blob/main/nvim/lua/mappings.lua)
+* [options.lua](https://github.com/CTZxVULKAN/dots/blob/main/nvim/lua/options.lua)
+* [pluginList.lua](https://github.com/CTZxVULKAN/dots/blob/main/nvim/lua/pluginList.lua)
+* [theme.lua](https://github.com/CTZxVULKAN/dots/blob/main/nvim/lua/theme.lua)
 
 ### Install Config 
 
