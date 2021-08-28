@@ -84,13 +84,19 @@ sudo npm i -g prettier
 | Save & Quit buffer   | Ctrl + x       |
 | Copy all   | Ctrl + a      |
 | File Explorer  | Space + f + e     |
+| Switch Buffers | Tab / Shift + Tab      |
+| Format / Prettify code | Space + f + m    |
+| Rename all instances | Space + r + n   |
+
+
+### Fuzzyfinder Bindings
+
+| Fucntion     | Binding        |
+|--------------|----------------|
 | Find files | Space + f  + f    |
 | Search words | Space + f + w |
 | Browse Commits | Space + cm      |
 | Browse Tabs | Space + f + b     |
-| Switch Buffers | Tab / Shift + Tab      |
-| Format / Prettify code | Space + f + m    |
-| Rename all instances | Space + r + n   |
 
 
 ### File Explorer Bindings
