@@ -90,3 +90,11 @@ sudo npm i -g prettier
 | Format / Prettify code | Space + f + m    |
 | Rename all instances | Space + r + n   |
 
+
+### File Explorer Bindings
+
+| Fucntion     | Binding        |
+|--------------|----------------|
+| Create new file in focused directory  | a       |
+| Delete focused file  | d       |
+| Rename focused file  | r   |
