@@ -24,13 +24,14 @@ cp dots/nvim/ ~/.config/nvim && nvim +PackerSync
 ```
 
 ### Install Dependencies 
-* **Pynvim** - python provider for neovim
+* **pynvim** - python provider for neovim
 * **neovim** - node js provider for neovim
 * **xsel** - clipboard manager allows copy/paste globally
+* **ripgrep** - live grep functionality
 
 > Run the following commands to install all dependencies. Use command `:checkhealth` to check wether all dependencies are installed succesfully.
 ```
-sudo pacman -S xsel 
+sudo pacman -S xsel ripgrep
 pip install pynvim
 npm i -g neovim / yarn global add neovim
 ``` 
@@ -86,6 +87,7 @@ sudo npm i -g prettier
 | Find files | Space + f  + f    |
 | Search words | Space + f + w |
 | Browse Commits | Space + cm      |
+| Browse Tabs | Space + f + b     |
 | Switch Buffers | Tab / Shift + Tab      |
 | Format / Prettify code | Space + f + m    |
 | Rename all instances | Space + r + n   |
