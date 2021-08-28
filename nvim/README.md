@@ -84,7 +84,8 @@ sudo npm i -g prettier
 | Save & Quit buffer   | Ctrl + x       |
 | Copy all   | Ctrl + a      |
 | File Explorer  | Space + f + e     |
-| Fuzzy Finder | Space + f  + f    |
+| Find files | Space + f  + f    |
+| Search words | Space + f + w |
 | Browse Commits | Space + cm      |
 | Switch Buffers | Tab / Shift + Tab      |
 | Format / Prettify code | Space + f + m    |
@@ -98,3 +99,4 @@ sudo npm i -g prettier
 | Create new file in focused directory  | a       |
 | Delete focused file  | d       |
 | Rename focused file  | r   |
+| Toggle hidden | H/ Shift + h |
