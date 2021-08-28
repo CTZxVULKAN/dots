@@ -17,10 +17,10 @@ For more information about NvChad visit [here.](https://github.com/siduck76/NvCh
 
 ### Install Config 
 
-> Execute the install script and everything should be installed fine by following the onscreen instructions.
+> Copy this folder in your `.config` ( remove pre-existing one ) & run Packer
 
 ```
-./install.sh
+cp dots/nvim/ ~/.config/nvim && nvim +PackerSync
 ```
 
 ### Install Dependencies 
