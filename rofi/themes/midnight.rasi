@@ -20,10 +20,10 @@ prompt {
 }
 
 textbox {
-  background-color: #2e343f;
   border: 0 0 1px 0;
-  border-color: #282C33;
+  background-color: #2e343f;
   padding: 8px 16px;
+  border-color: #282C33;
 }
 
 entry {
@@ -41,6 +41,22 @@ element {
   padding: 16px;
 }
 
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
 element selected {
   background-color: #2e343f;
+}
+
+element-icon {
+  size: 24;
+  margin: 0 10 0 0;
+
+  background-color: inherit;
+  text-color:       inherit;
+
+  vertical-align: 0.5;
 }
