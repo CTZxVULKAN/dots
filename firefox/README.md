@@ -237,6 +237,12 @@ browser.search.region = "US"
 browser.search.geoip.url = ""
 ```
 
+* Disable search engiene updates
+
+```
+browser.search.update = false
+```
+
 * Disable extension discovery
 
 ```
