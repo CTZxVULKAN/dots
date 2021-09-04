@@ -10,6 +10,7 @@
 * [Ublock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
 * [Decentraleyes](https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/) / [LocalCDN](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/)
 * [Cookie Auto Delete](https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/)
+* [NeatURL](https://addons.mozilla.org/en-US/firefox/addon/neat-url/) / [ClearURLs](https://addons.mozilla.org/en-US/firefox/addon/clearurls/)
 * [User Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/)
 
 
