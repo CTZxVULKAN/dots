@@ -322,5 +322,9 @@ toolkit.telemetry.unified = false
 toolkit.telemetry.updateping.enabled = false
 toolkit.telemetry.shutdownpingsender.enabled = false
 loop.logDomains = false
+toolkit.coverage.endpoint.base = ""
+toolkit.coverage.opt-out = true
+toolkit.telemetry.coverage.opt-out = true
+
 ```
 
