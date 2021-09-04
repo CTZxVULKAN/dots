@@ -174,6 +174,7 @@ network.manage-offline-status = false
 ```
 browser.tabs.crashReporting.sendReport = false
 browser.crashReports.unsubmittedCheck.enabled = false
+browser.crashReports.unsubmittedCheck.autoSubmit2 = false
 breakpad.reportURL = ""
 ```
 * Disable health reports
@@ -182,6 +183,12 @@ breakpad.reportURL = ""
 datareporting.policy.dataSubmissionEnabled = false 
 datareporting.healthreport.service.enabled = false
 datareporting.healthreport.uploadEnabled = false
+```
+* Disable Captive Portal detection
+
+```
+captivedetect.canonicalURL = ""
+network.captive-portal-service.enabled = false
 ```
 
 * Disable Google scanning downloads for safe browsing api 
