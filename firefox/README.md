@@ -241,6 +241,13 @@ browser.search.geoip.url = ""
 ```
 plugin.scan.plid.all = false
 ```
+* Disable extension recommendations
+
+```
+extensions.getAddons.showPane = false
+extensions.htmlaboutaddons.recommendations.enabled
+```
+
 * Disable Pocket by Mozilla & Extension recommendation
 
 ```
