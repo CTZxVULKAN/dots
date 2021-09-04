@@ -239,7 +239,12 @@ browser.search.countryCode = "US"
 browser.search.region = "US"
 browser.search.geoip.url = ""
 ```
+* Disable Mozilla's region updates
 
+```
+browser.region.network.url = ""
+browser.region.update.enabled = false 
+```
 * Disable search engiene updates
 
 ```
