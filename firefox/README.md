@@ -285,6 +285,11 @@ browser.discovery.enabled = false
 ```
 privacy.firstparty.isolate = true
 ```
+* Enforce firefox blocklist
+
+```
+extensions.blocklist.enabled = true
+```
 
 * Disable webgl
 ```
