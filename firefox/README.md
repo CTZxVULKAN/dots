@@ -242,7 +242,7 @@ browser.search.geoip.url = ""
 ```
 plugin.scan.plid.all = false
 ```
-* Disable extension recommendations
+* Disable extension recommendations (uses google analytics)
 
 ```
 extensions.getAddons.showPane = false
