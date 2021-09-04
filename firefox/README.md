@@ -300,7 +300,8 @@ devtools.webide.autoinstallFxdtAdapters = false
 * Disable Telemetry 
 
 ```
-browser.newtabpage.activity-stream.feeds.telemetry browser.newtabpage.activity-stream.telemetry = false
+browser.newtabpage.activity-stream.feeds.telemetry = false
+browser.newtabpage.activity-stream.telemetry = false
 browser.pingcentre.telemetry = false
 devtools.onboarding.telemetry-logged = false
 media.wmf.deblacklisting-for-telemetry-in-gpu-process = false
