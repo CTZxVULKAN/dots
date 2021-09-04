@@ -174,6 +174,7 @@ network.manage-offline-status = false
 ```
 browser.tabs.crashReporting.sendReport = false
 browser.crashReports.unsubmittedCheck.enabled = false
+breakpad.reportURL = ""
 ```
 * Disable health reports
 
@@ -261,6 +262,7 @@ plugin.scan.plid.all = false
 ```
 extensions.getAddons.showPane = false
 extensions.htmlaboutaddons.recommendations.enabled
+browser.discovery.enabled = false
 ```
 
 * Disable Pocket by Mozilla & Extension recommendation
@@ -325,6 +327,6 @@ loop.logDomains = false
 toolkit.coverage.endpoint.base = ""
 toolkit.coverage.opt-out = true
 toolkit.telemetry.coverage.opt-out = true
-
+app.shield.optoutstudies.enabled = false
 ```
 
