@@ -167,6 +167,7 @@ beacon.enabled = false
 * Prevent Websites & FF from detecting offline/online status
 
 ```
+network.connectivity-service.enabled = false
 network.manage-offline-status = false
 ```
 
