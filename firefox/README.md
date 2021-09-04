@@ -228,6 +228,9 @@ browser.cache.insecure.enable = false
 
 ```
 geo.enabled = false
+geo.provider.use_gpsd = false [linux]
+geo.provider.use_corelocation = false [linux]
+geo.provider.ms-windows-location = false [windows]
 ```
 * Prevent search engienes from GeoIP lookup instead use a preset region
 
