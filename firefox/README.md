@@ -8,7 +8,7 @@
 ### Extensions
 
 * [Ublock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
-* [Decentraleyes](https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/) 
+* [Decentraleyes](https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/) / [LocalCDN](https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/)
 * [Cookie Auto Delete](https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/)
 * [User Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/)
 
