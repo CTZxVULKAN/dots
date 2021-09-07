@@ -19,6 +19,8 @@ opt.smartindent = options.smartindent
 --display large lines in a single line
 vim.cmd([[set nowrap]])
 
+--auto close file exploer when quiting incase a single buffer is left
+vim.cmd([[ autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'nvimtree') | q | endif ]])
 
 --improved jsx support
 g.jsx_improve_javascriptreact = 1
