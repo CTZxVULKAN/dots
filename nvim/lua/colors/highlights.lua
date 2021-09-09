@@ -147,7 +147,7 @@ if ui.transparency then
 end
 
 -- Telescope
-fg("TelescopeBorder", line)
-fg("TelescopePreviewBorder", grey)
-fg("TelescopePromptBorder", line)
-fg("TelescopeResultsBorder", line)
+fg("TelescopeBorder", white)
+fg("TelescopePreviewBorder", white)
+fg("TelescopePromptBorder", white)
+fg("TelescopeResultsBorder", white)
