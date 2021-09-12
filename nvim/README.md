@@ -64,15 +64,28 @@ vim.cmd([[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]])
 ```
 
 ### Install Intellisense 
-> To check available languages use :LspInstall `<Tab>`
+
+* Setup language servers :
+
 ```
-:LspInstall python json cpp html typescript css bash lua rust
+sudo npm i -g vscode-langservers-extracted typescript typescript-language-server bash-language-server
 ```
-### Install code formatters 
-> For information visit [here.](https://github.com/sbdchd/neoformat#supported-filetypes)
+* Let Nvim use the servers
+
+Add the following to your `chadrc`
+
 ```
-sudo npm i -g prettier
+M.plugins = {
+   lspconfig = {
+      -- servers = {"html", "cssls"}
+      servers = {"html","cssls","tsserver","bashls","pyright"},
+   },
+}
+
 ```
+> Find more servers [here](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
+
+
 ### Quick Keybindings
 
 | Fucntion     | Binding        |
