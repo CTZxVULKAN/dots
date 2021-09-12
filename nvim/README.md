@@ -90,6 +90,12 @@ M.plugins = {
 ```
 set -U fish_user_paths $HOME/.local/share/npm
 ```
+> also add the following to your `.config/npm/npmrc`
+
+```
+prefix=${XDG_DATA_HOME}/npm
+cache=${XDG_CACHE_HOME}/npm
+```
 
 * Add parsers
 
