@@ -63,7 +63,7 @@ For more information regarding packer visit [here.](https://github.com/wbthomaso
 vim.cmd([[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]])
 ```
 
-### Install Intellisense 
+### Setup Intellisense 
 
 * Setup language servers :
 
@@ -89,6 +89,12 @@ M.plugins = {
 
 ```
 set -U fish_user_paths $HOME/.local/share/npm
+```
+
+* Add parsers
+
+```
+:TSInstall html css python lua javascript typescript cpp
 ```
 
 ### Quick Keybindings
