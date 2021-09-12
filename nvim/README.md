@@ -84,6 +84,7 @@ M.plugins = {
 
 ```
 > Find more servers [here](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
+
 > For fish shell add the following to your `~/.config/fish/config.fish`
 
 ```
