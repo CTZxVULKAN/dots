@@ -68,7 +68,7 @@ vim.cmd([[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]])
 * Setup language servers :
 
 ```
-sudo npm i -g vscode-langservers-extracted typescript typescript-language-server bash-language-server
+sudo npm i -g vscode-langservers-extracted typescript typescript-language-server bash-language-server pyright
 ```
 * Let Nvim use the servers
 
@@ -84,7 +84,11 @@ M.plugins = {
 
 ```
 > Find more servers [here](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
+> For fish shell add the following to your `~/.config/fish/config.fish`
 
+```
+set -U fish_user_paths $HOME/.local/share/npm
+```
 
 ### Quick Keybindings
 
