@@ -19,10 +19,11 @@ M.misc = function()
       -- Allow moving the cursor through wrapped lines with j, k, <Up> and <Down>
       -- http://www.reddit.com/r/vim/comments/2k4cbr/problem_with_gj_and_gk/
       -- empty mode is same as using :map
-      map("", "j", 'v:count ? "j" : "gj"', { expr = true })
-      map("", "k", 'v:count ? "k" : "gk"', { expr = true })
-      map("", "<Down>", 'v:count ? "j" : "gj"', { expr = true })
-      map("", "<Up>", 'v:count ? "k" : "gk"', { expr = true })
+      -- also don't use g[j|k] when in operator pending mode, so it doesn't alter d, y or c behaviour
+      map("", "j", 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', { expr = true })
+      map("", "k", 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', { expr = true })
+      map("", "<Down>", 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', { expr = true })
+      map("", "<Up>", 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', { expr = true })
 
       -- use ESC to turn off search highlighting
       map("n", "<Esc>", ":noh <CR>")
@@ -62,35 +63,17 @@ M.misc = function()
    end
 
    local function required_mappings()
-
-     --QUICK BINDINGS--
-
-     --save--
-      map("n", "<C-s>", ":w <CR>", opt)
-
-     --save&exit--
-
-      map("n", "<C-q>", ":wq! <CR>", opt)
-
-    --save&close buffer--
-
-      map("n", "<C-x>", ":bw! <CR>", opt)
-
-    -- ESC --
-      map("n", "<C-c>", ": <ESC>")
-
-    -- copy whole file content
-      map("n", "<C-a>", ":%y+<CR>", opt)
-
-    -- toggle numbers
-      map("n", "<leader>n", ":set nu!<CR>", opt)
-
-
-
-
-
+      map("n", maps.close_buffer, ":lua require('core.utils').close_buffer() <CR>") -- close  buffer
+      map("n", maps.copy_whole_file, ":%y+ <CR>") -- copy whole file content
+      map("n", maps.new_buffer, ":enew <CR>") -- new buffer
+      map("n", maps.new_tab, ":tabnew <CR>") -- new tabs
+      map("n", maps.line_number_toggle, ":set nu! <CR>") -- toggle numbers
+      map("n", maps.save_file, ":w <CR>") -- ctrl + s to save file
+      map("n", maps.save_file_close_buffer, ":bw! <CR>") -- ctrl + x to save file and close buffer
+      map("n", maps.save_and_exit, ":wq! <CR>") -- ctrl + q to save file and close everything
+      map("n", maps.quick_esc, ": <ESC>") -- ctrl + q to save file and close everything
       -- terminal mappings --
-      --local term_maps = maps.terminal
+      local term_maps = maps.terminal
       -- get out of terminal mode
       --map("t", term_maps.esc_termmode, "<C-\\><C-n>")
       -- hide a term from within terminal mode
@@ -101,7 +84,7 @@ M.misc = function()
       -- TODO this opens on top of an existing vert/hori term, fixme
       --map("n", term_maps.new_horizontal, ":execute 15 .. 'new +terminal' | let b:term_type = 'hori' | startinsert <CR>")
       --map("n", term_maps.new_vertical, ":execute 'vnew +terminal' | let b:term_type = 'vert' | startinsert <CR>")
-      --map("n", term_maps.new_window, ":execute 'terminal' | let b:term_type = 'wind' | startinsert <CR>")
+     -- map("n", term_maps.new_window, ":execute 'terminal' | let b:term_type = 'wind' | startinsert <CR>")
       -- terminal mappings end --
 
       -- Add Packer commands because we are not loading it at startup
@@ -137,17 +120,17 @@ M.misc = function()
    user_config_mappings()
 end
 
--- below are all plugin related mappinsg
-
-M.better_escape = function()
-   vim.g.better_escape_shortcut = plugin_maps.better_escape.esc_insertmode or { "" }
-end
+-- below are all plugin related mappings
 
 M.bufferline = function()
    local m = plugin_maps.bufferline
 
    map("n", m.next_buffer, ":BufferLineCycleNext <CR>")
    map("n", m.prev_buffer, ":BufferLineCyclePrev <CR>")
+   map("n", m.moveLeft, "<C-w>h")
+   map("n", m.moveRight, "<C-w>l")
+   map("n", m.moveUp, "<C-w>k")
+   map("n", m.moveDown, "<C-w>j")
 end
 
 M.chadsheet = function()
@@ -178,9 +161,8 @@ M.dashboard = function()
 end
 
 M.nvimtree = function()
-   --map("n", plugin_maps.nvimtree.toggle, ":NvimTreeToggle <CR>")
-   --map("n", plugin_maps.nvimtree.focus, ":NvimTreeFocus <CR>")
-   map("n", "<Leader>fe", ":NvimTreeToggle<CR>", opt)
+   map("n", plugin_maps.nvimtree.toggle, ":NvimTreeToggle <CR>")
+   map("n", plugin_maps.nvimtree.focus, ":NvimTreeFocus <CR>")
 end
 
 M.neoformat = function()

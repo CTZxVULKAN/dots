@@ -24,7 +24,7 @@ vim.cmd([[ autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'nvimtree') | 
 
 --improved jsx support
 g.jsx_improve_javascriptreact = 1
-
+   
 -- disable tilde on end of buffer: https://github.com/  neovim/neovim/pull/8546#issuecomment-643643758
 opt.fillchars = { eob = " " }
 

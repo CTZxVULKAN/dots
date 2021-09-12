@@ -31,9 +31,10 @@ M.ui.plugin = {
       -- these are filetypes, not pattern matched
       -- if a filetype is present in shown, it will always show the statusline, irrespective of filetypes in hidden
       hidden = {
+         "help",
+         "dashboard",
          "NvimTree",
          "terminal",
-         "dashboard",
       },
       shown = {},
       -- default, round , slant , block , arrow
@@ -84,11 +85,10 @@ M.plugin_status = {
    cheatsheet = true, -- fuzzy search your commands/keymappings
    colorizer = true,
    comment = true, -- universal commentor
-   dashboard = true, -- a nice looking dashboard
+   dashboard = false, -- a nice looking dashboard
    esc_insertmode = true, -- escape from insert mode using custom keys
    feline = true, -- statusline
    gitsigns = true, -- gitsigns in statusline
-   lspkind = true, -- lsp enhancements
    lspsignature = true, -- lsp enhancements
    neoformat = true, -- universal formatter
    neoscroll = true, -- smooth scroll
@@ -169,7 +169,7 @@ M.mappings.plugin = {
    nvimtree = {
       -- file tree
       toggle = "<C-n>",
-      focus = "<C-h>",
+      focus = "<leader>e",
    },
    neoformat = {
       format = "<leader>fm",
@@ -217,4 +217,10 @@ M.custom.mappings = {
    -- },
 }
 
+M.plugins = {
+   lspconfig = {
+      -- servers = {"html", "cssls"}
+      servers = {},
+   },
+}
 return M

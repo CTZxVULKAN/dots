@@ -1,5 +1,7 @@
 local M = {}
 
+local config = require("core.utils").load_config()
+
 M.autopairs = function()
    local present1, autopairs = pcall(require, "nvim-autopairs")
    local present2, autopairs_completion = pcall(require, "nvim-autopairs.completion.cmp")
@@ -23,7 +25,7 @@ M.autosave = function()
    end
 
    autosave.setup {
-      enabled = vim.g.auto_save or false, -- takes boolean value from init.lua
+      enabled = config.options.plugin.autosave, -- takes boolean value from chadrc.lua
       execution_message = "autosaved at : " .. vim.fn.strftime "%H:%M:%S",
       events = { "InsertLeave", "TextChanged" },
       conditions = {
@@ -38,25 +40,47 @@ M.autosave = function()
 end
 
 M.better_escape = function()
-   local config = require("core.utils").load_config()
+   local m = require("core.utils").load_config().mappings.plugin.better_escape.esc_insertmode
+
    vim.g.better_escape_interval = config.options.plugin.esc_insertmode_timeout or 300
+   vim.g.better_escape_shortcut = m
 end
 
 M.blankline = function()
-   vim.g.indentLine_enabled = 1
-   vim.g.indent_blankline_char = "▏"
-
-   vim.g.indent_blankline_filetype_exclude = { "help", "terminal", "dashboard", "packer" }
-   vim.g.indent_blankline_buftype_exclude = { "terminal" }
-
-   vim.g.indent_blankline_show_trailing_blankline_indent = false
-   vim.g.indent_blankline_show_first_indent_level = false
+   require("indent_blankline").setup {
+      indentLine_enabled = 1,
+      char = "▏",
+      filetype_exclude = {
+         "help",
+         "terminal",
+         "dashboard",
+         "packer",
+         "lspinfo",
+         "TelescopePrompt",
+         "TelescopeResults",
+      },
+      buftype_exclude = { "terminal" },
+      show_trailing_blankline_indent = false,
+      show_first_indent_level = false,
+   }
 end
 
 M.colorizer = function()
    local present, colorizer = pcall(require, "colorizer")
    if present then
-      colorizer.setup()
+      colorizer.setup({ "*" }, {
+         RGB = true, -- #RGB hex codes
+         RRGGBB = true, -- #RRGGBB hex codes
+         names = false, -- "Name" codes like Blue
+         RRGGBBAA = false, -- #RRGGBBAA hex codes
+         rgb_fn = false, -- CSS rgb() and rgba() functions
+         hsl_fn = false, -- CSS hsl() and hsla() functions
+         css = false, -- Enable all CSS features: rgb_fn, hsl_fn, names, RGB, RRGGBB
+         css_fn = false, -- Enable all CSS *functions*: rgb_fn, hsl_fn
+
+         -- Available modes: foreground, background
+         mode = "background", -- Set the display mode.
+      })
       vim.cmd "ColorizerReloadAllBuffers"
    end
 end
@@ -68,11 +92,17 @@ M.comment = function()
    end
 end
 
-M.lspkind = function()
-   local present, lspkind = pcall(require, "lspkind")
-   if present then
-      lspkind.init()
+M.luasnip = function()
+   local present, luasnip = pcall(require, "luasnip")
+   if not present then
+      return
    end
+
+   luasnip.config.set_config {
+      history = true,
+      updateevents = "TextChanged,TextChangedI",
+   }
+   require("luasnip/loaders/from_vscode").load()
 end
 
 M.neoscroll = function()

@@ -1,26 +1,27 @@
 local g = vim.g
-local fn = vim.fn
+
+-- local fn = vim.fn
 -- local plugins_count = fn.len(fn.globpath("~/.local/share/nvim/site/pack/packer/start", "*", 0, 1))
 
-g.dashboard_disable_at_vimenter = 1 -- dashboard is disabled by default
+g.dashboard_disable_at_vimenter = 0
 g.dashboard_disable_statusline = 1
 g.dashboard_default_executive = "telescope"
 g.dashboard_custom_header = {
-
-"                                                  ",
-"                                                  ",
-"                                                  ",
-"                                                  ",
-" ███╗  ██╗███████╗ █████╗ ██╗   ██╗██╗███╗   ███╗ ",
-" ████╗ ██║██╔════╝██╔══██╗██║   ██║██║████╗ ████║ ",
-" ██╔██╗██║█████╗  ██║  ██║╚██╗ ██╔╝██║██╔████╔██║ ",
-" ██║╚████║██╔══╝  ██║  ██║ ╚████╔╝ ██║██║╚██╔╝██║ ",
-" ██║ ╚███║███████╗╚█████╔╝  ╚██╔╝  ██║██║ ╚═╝ ██║ ",
-" ╚═╝  ╚══╝╚══════╝ ╚════╝    ╚═╝   ╚═╝╚═╝     ╚═╝ ",
-"                                                  ",
-"                                                  ",
-"                                                  ",
-
+   "                                   ",
+   "                                   ",
+   "                                   ",
+   "   ⣴⣶⣤⡤⠦⣤⣀⣤⠆     ⣈⣭⣿⣶⣿⣦⣼⣆         ",
+   "    ⠉⠻⢿⣿⠿⣿⣿⣶⣦⠤⠄⡠⢾⣿⣿⡿⠋⠉⠉⠻⣿⣿⡛⣦       ",
+   "          ⠈⢿⣿⣟⠦ ⣾⣿⣿⣷    ⠻⠿⢿⣿⣧⣄     ",
+   "           ⣸⣿⣿⢧ ⢻⠻⣿⣿⣷⣄⣀⠄⠢⣀⡀⠈⠙⠿⠄    ",
+   "          ⢠⣿⣿⣿⠈    ⣻⣿⣿⣿⣿⣿⣿⣿⣛⣳⣤⣀⣀   ",
+   "   ⢠⣧⣶⣥⡤⢄ ⣸⣿⣿⠘  ⢀⣴⣿⣿⡿⠛⣿⣿⣧⠈⢿⠿⠟⠛⠻⠿⠄  ",
+   "  ⣰⣿⣿⠛⠻⣿⣿⡦⢹⣿⣷   ⢊⣿⣿⡏  ⢸⣿⣿⡇ ⢀⣠⣄⣾⠄   ",
+   " ⣠⣿⠿⠛ ⢀⣿⣿⣷⠘⢿⣿⣦⡀ ⢸⢿⣿⣿⣄ ⣸⣿⣿⡇⣪⣿⡿⠿⣿⣷⡄  ",
+   " ⠙⠃   ⣼⣿⡟  ⠈⠻⣿⣿⣦⣌⡇⠻⣿⣿⣷⣿⣿⣿ ⣿⣿⡇ ⠛⠻⢷⣄ ",
+   "    ⢻⣿⣿⣄   ⠈⠻⣿⣿⣿⣷⣿⣿⣿⣿⣿⡟ ⠫⢿⣿⡆       ",
+   "       ⠻⣿⣿⣿⣿⣶⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⡟⢀⣀⣤⣾⡿⠃     ",
+   "                                   ",
 }
 
 g.dashboard_custom_section = {
@@ -34,5 +35,6 @@ g.dashboard_custom_section = {
 
 g.dashboard_custom_footer = {
    "   ",
-   "VULKAN",
+   -- "NvChad Loaded " .. plugins_count .. " plugins",
+   "NvChad v0.5",
 }

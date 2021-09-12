@@ -63,15 +63,6 @@ return packer.startup(function()
    }
 
    use {
-         "chemzqm/vim-jsx-improve"
-        }
-
-   use {
-          "sheerun/vim-polyglot"
-        }
-
-
-   use {
       "lukas-reineke/indent-blankline.nvim",
       disable = not plugin_status.blankline,
       event = "BufRead",
@@ -89,9 +80,9 @@ return packer.startup(function()
       end,
    }
 
-   -- lsp stuff
    use {
       "nvim-treesitter/nvim-treesitter",
+      branch = "0.5-compat",
       event = "BufRead",
       config = function()
          require "plugins.configs.treesitter"
@@ -124,17 +115,18 @@ return packer.startup(function()
       end,
    }
 
-   use {
-      "kabouzeid/nvim-lspinstall",
-      opt = true,
-      setup = function()
-         require("core.utils").packer_lazy_load "nvim-lspinstall"
-      end,
-   }
+   -- lsp stuff
 
    use {
       "neovim/nvim-lspconfig",
-      after = "nvim-lspinstall",
+      opt = true,
+      setup = function()
+         require("core.utils").packer_lazy_load "nvim-lspconfig"
+         -- reload the current file so lsp actually starts for it
+         vim.defer_fn(function()
+            vim.cmd "silent! e %"
+         end, 0)
+      end,
       config = function()
          require "plugins.configs.lspconfig"
       end,
@@ -171,48 +163,41 @@ return packer.startup(function()
    }
 
    use {
-      "onsails/lspkind-nvim",
-      disable = not plugin_status.lspkind,
-      after = "LuaSnip",
-      config = function()
-         require("plugins.configs.others").lspkind()
-      end,
-   }
-
-   use {
       "jdhao/better-escape.vim",
       disable = not plugin_status.esc_insertmode,
       event = "InsertEnter",
-      config = function()
-         require("plugins.configs.others").better_escape()
-      end,
       setup = function()
-         require("core.mappings").better_escape()
+         require("plugins.configs.others").better_escape()
       end,
    }
 
    -- load luasnips + cmp related in insert mode only
 
    use {
-      "L3MON4D3/LuaSnip",
+      "rafamadriz/friendly-snippets",
       event = "InsertEnter",
-      wants = "friendly-snippets",
-      config = function()
-         require "plugins.configs.luasnip"
-      end,
    }
 
    use {
       "hrsh7th/nvim-cmp",
+      after = "friendly-snippets",
       config = function()
          require "plugins.configs.cmp"
       end,
-      after = "lspkind-nvim",
+   }
+
+   use {
+      "L3MON4D3/LuaSnip",
+      wants = "friendly-snippets",
+      after = "nvim-cmp",
+      config = function()
+         require("plugins.configs.others").luasnip()
+      end,
    }
 
    use {
       "saadparwaiz1/cmp_luasnip",
-      after = "nvim-cmp",
+      after = "LuaSnip",
    }
 
    use {
@@ -230,10 +215,14 @@ return packer.startup(function()
       after = "cmp-nvim-lsp",
    }
 
+   --better language support
    use {
-      "rafamadriz/friendly-snippets",
-      after = "cmp-buffer",
-   }
+         "chemzqm/vim-jsx-improve"
+        }
+
+   use {
+          "sheerun/vim-polyglot"
+        }
 
    -- misc plugins
    use {
@@ -247,13 +236,6 @@ return packer.startup(function()
    use {
       "glepnir/dashboard-nvim",
       disable = not plugin_status.dashboard,
-      cmd = {
-         "Dashboard",
-         "DashboardNewFile",
-         "DashboardJumpMarks",
-         "SessionLoad",
-         "SessionSave",
-      },
       config = function()
          require "plugins.configs.dashboard"
       end,

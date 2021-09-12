@@ -5,8 +5,8 @@ local icon_styles = {
    default = {
       left = " ",
       right = " ",
-      right_nospc ="",
-      left_nospc ="",
+      right_nospc="",
+      left_nospc="",
       main_icon = " NVIM ",
       vi_mode_icon = "  ",
       position_icon = " ",
@@ -69,7 +69,10 @@ components.active[1][1] = {
       bg = colors.nord_blue,
    },
 
-
+   right_sep = { str = statusline_style.right_nospc, hl = {
+      fg = colors.nord_blue,
+      bg = colors.one_bg2,
+   } },
 }
 
 components.active[1][2] = {
@@ -96,7 +99,7 @@ components.active[1][3] = {
       fg = colors.white,
       bg = colors.lightbg,
    },
-
+   right_sep = { str = statusline_style.right_nospc, hl = { fg = colors.lightbg, bg = colors.lightbg2 } },
 }
 
 components.active[1][4] = {
@@ -232,7 +235,7 @@ components.active[3][2] = {
 }
 
 components.active[3][3] = {
-   provider = " " .. statusline_style.left,
+   provider = " " .. statusline_style.left_nospc,
    hl = {
       fg = colors.one_bg2,
       bg = colors.statusline_bg,
@@ -341,7 +344,9 @@ components.active[3][10] = {
 }
 
 require("feline").setup {
-   default_bg = colors.statusline_bg,
-   default_fg = colors.fg,
+   colors = {
+      bg = colors.statusline_bg,
+      fg = colors.fg,
+   },
    components = components,
 }

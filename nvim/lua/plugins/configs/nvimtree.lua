@@ -27,7 +27,7 @@ g.nvim_tree_root_folder_modifier = table.concat { ":t:gs?$?/..", string.rep(" ",
 g.nvim_tree_side = "left"
 g.nvim_tree_tab_open = 0
 g.nvim_tree_update_cwd = 1
-g.nvim_tree_width = 33
+g.nvim_tree_width = 35
 g.nvim_tree_lsp_diagnostics = 0
 
 g.nvim_tree_show_icons = {
@@ -56,7 +56,7 @@ g.nvim_tree_icons = {
       default = "",
       empty = "", -- 
       empty_open = "",
-      open = "",
+      open = "",
       symlink = "",
       symlink_open = "",
    },

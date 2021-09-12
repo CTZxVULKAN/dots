@@ -74,23 +74,22 @@ M.options.plugin = {
 
 -- enable and disable plugins (false for disable)
 M.plugin_status = {
-   autosave = true, -- to autosave files
+   autosave = false, -- to autosave files
    blankline = true, -- beautified blank lines
    bufferline = true, -- buffer shown as tabs
    cheatsheet = true, -- fuzzy search your commands/keymappings
    colorizer = true,
    comment = true, -- universal commentor
-   dashboard = true, -- a nice looking dashboard
+   dashboard = false, -- a nice looking dashboard
    esc_insertmode = true, -- escape from insert mode using custom keys
    feline = true, -- statusline
    gitsigns = true, -- gitsigns in statusline
-   lspkind = true, -- lsp enhancements
    lspsignature = true, -- lsp enhancements
    neoformat = true, -- universal formatter
    neoscroll = true, -- smooth scroll
-   telescope_media = true, -- see media files in telescope picker
-   truezen = true, -- no distraction mode for nvim
-   vim_fugitive = true, -- git in nvim
+   telescope_media = false, -- see media files in telescope picker
+   truezen = false, -- no distraction mode for nvim
+   vim_fugitive = false, -- git in nvim
    vim_matchup = true, -- % magic, match it but improved
 }
 
@@ -115,7 +114,11 @@ M.mappings = {
    new_buffer = "<S-t>", -- open a new buffer
    new_tab = "<C-t>b", -- open a new vim tab
    save_file = "<C-s>", -- save file using :w
+   save_file_close_buffer = "<C-x>", -- save file using :w
+   save_and_exit = "<C-q>",
+   quick_esc = "<C-c>",
    theme_toggler = "<leader>tt", -- for theme toggler, see in ui.theme_toggler
+   
 
    -- terminal related mappings
    terminal = {
@@ -143,6 +146,11 @@ M.mappings.plugin = {
    bufferline = {
       next_buffer = "<TAB>", -- next buffer
       prev_buffer = "<S-Tab>", -- previous buffer
+      --better window movement
+      moveLeft = "<C-h>",
+      moveRight = "<C-l>",
+      moveUp = "<C-k>",
+      moveDown = "<C-j>",
    },
    chadsheet = {
       default_keys = "<leader>dk",
@@ -163,7 +171,7 @@ M.mappings.plugin = {
       esc_insertmode = { "jk" }, -- multiple mappings allowed
    },
    nvimtree = {
-      toggle = "<C-n>", -- file manager
+      toggle = "<leader>fe", -- file manager
    },
    neoformat = {
       format = "<leader>fm",
@@ -208,6 +216,13 @@ M.custom.mappings = {
    --    "<leader>cc",
    --    "gg0vG$d",
    -- },
+}
+
+M.plugins = {
+   lspconfig = {
+      -- servers = {"html", "cssls"}
+      servers = {"html","cssls","tsserver","bashls","pyright"},
+   },
 }
 
 return M

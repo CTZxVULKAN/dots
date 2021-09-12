@@ -8,13 +8,12 @@ end
 -- function executed for top right close button in bufferline
 vim.cmd "function! NvChad_bufferline_quitvim(a,b,c,d) \n qa \n endfunction"
 
-
-
 bufferline.setup {
    options = {
       offsets = { { filetype = "NvimTree", text = "", padding = 1 } },
       buffer_close_icon = "",
       modified_icon = "",
+      -- close_icon = "%@NvChad_bufferline_quitvim@%X",
       close_icon = "",
       show_close_icon = false,
       left_trunc_marker = "",
@@ -28,8 +27,7 @@ bufferline.setup {
       show_buffer_close_icons = true,
       separator_style = "thin",
       always_show_bufferline = true,
-      diagnostics = false, -- "or nvim_lsp"   
-
+      diagnostics = false, -- "or nvim_lsp"
       custom_filter = function(buf_number)
          -- Func to filter out our managed/persistent split terms
          local present_type, type = pcall(function()
@@ -63,6 +61,16 @@ bufferline.setup {
          gui = "bold",
       },
       buffer_visible = {
+         guifg = colors.light_grey,
+         guibg = colors.black2,
+      },
+
+      -- for diagnostics = "nvim_lsp"
+      error = {
+         guifg = colors.light_grey,
+         guibg = colors.black2,
+      },
+      error_diagnostic = {
          guifg = colors.light_grey,
          guibg = colors.black2,
       },
