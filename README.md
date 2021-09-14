@@ -39,7 +39,7 @@ yay -S polybar picom-jonaburg-git i3-scrot i3lock-color w3m
 * Brave (Web browser)
 * Neovim (Editor)
 * l3afpad (Graphical Editor)
-* Element (Internet messenger)
+* Schildi Chat (Internet messenger)
 * Signal (Internet messenger)
 * GPicView (Image viewer)
 * Mpv (Media player)
@@ -47,11 +47,12 @@ yay -S polybar picom-jonaburg-git i3-scrot i3lock-color w3m
 * Transmission (Torrent client)
 * Xarchiver (Archive manager)
 * ProtonVPN (VPN)
+* Bitwarden (Password Manager)
 ```
 
 ```html
 sudo pacman -S firefox gpicview mpv transmission-gtk neovim
-yay -S l3afpad zathura element-desktop signal-desktop zathura-pdf-mupdf brave-bin xarchiver p7zip zip unzip unrar protonvpn-cli-ng
+yay -S l3afpad zathura schildichat-desktop-bin bitwarden-bin signal-desktop zathura-pdf-mupdf brave-bin xarchiver p7zip zip unzip unrar protonvpn-cli-ng
 ```
 
 * **Essential fonts**
