@@ -279,6 +279,14 @@ sudo reboot
 sudo pacman -Syyy
 ```
 
+* **Run Flatpaks with Hardened Kernel**
+
+```
+chmod u+s /usr/bin/bwrap
+```
+> With a hardened linux kernel flatpaks arent allowed to run as the creation of unprevilliged user namespaces are disabled.This can be manually re-enabled by the user.
+> For more information visit [here](https://github.com/containers/bubblewrap/issues/324)
+
 <br>
 <br>
 
