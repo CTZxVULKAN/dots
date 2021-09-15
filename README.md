@@ -255,6 +255,7 @@ sudo pacman -S artix-archlinux-support
  [multilib]
  Include = /etc/pacman.d/mirrorlist-arch 
 ```
+<br>
 
 
 *  **PGP Keys**
@@ -278,6 +279,7 @@ keyserver hkp://keyserver.ubuntu.com/
 sudo reboot
 sudo pacman -Syyy
 ```
+<br>
 
 * **Run Flatpaks with Hardened Kernel**
 
