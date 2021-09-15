@@ -281,7 +281,7 @@ sudo pacman -Syyy
 ```
 <br>
 
-* **Run Flatpaks with Hardened Kernel**
+* **Run Flatpaks with a hardened kernel**
 
 ```
 chmod u+s /usr/bin/bwrap
