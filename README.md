@@ -217,6 +217,9 @@ fish_add_path  ~/.local/bin
 sudo pacman -S linux-hardened linux-hardened
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
+> Incase of multi-booting you may need to update your GRUB configuration from all the distros. To be able to list the hardened kernel option in your bootloader.
+> For booting into `hardened-kernel` check `Advanced Options for Artix` while in GRUB.
+
 > Note: Not all applications, dirvers and devices will work properly. You may have to use [DKMS](https://wiki.archlinux.org/title/Dynamic_Kernel_Module_Support) to install your drivers (nvidia).
 > Please reffer to [this](https://wiki.archlinux.org/title/Security#Kernel_hardening)
 <br>
