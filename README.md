@@ -209,6 +209,20 @@ fish_add_path  ~/.local/bin
 > * Unlike bash fish doesnt have any fishrc just execute this command.
 
 
+## Security
+
+* Kernel Hardening
+
+```
+sudo pacman -S linux-hardened linux-hardened
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+> Note: Not all applications, dirvers and devices will work properly. You may have to use [DKMS](https://wiki.archlinux.org/title/Dynamic_Kernel_Module_Support) to install your drivers (nvidia).
+> Please reffer to [this](https://wiki.archlinux.org/title/Security#Kernel_hardening)
+<br>
+<br>
+
+
 ## Common Issues
 
 *  **Enable  Arch Linux Support**
