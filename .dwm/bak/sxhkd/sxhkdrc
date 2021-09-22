@@ -1,0 +1,95 @@
+#################################################################
+# quick bindings for applications
+#################################################################
+
+# terminal 
+super + F1
+    kitty ~
+
+# file manager
+super + F2
+    pcmanfm -n ~
+
+# browser
+super + F3
+    firefox
+
+# browser-2
+super + F4
+    brave
+
+# blutooth
+super + F5
+    blueman-manager
+
+# volume control
+super + F6	
+    pavucontrol
+
+# editor
+super + F7
+    leafpad
+
+
+super + x
+    rofi -display-drun "" -modi drun -show drun -font "Hack 18" -icon-theme "Tela" -show-icons 
+
+
+
+
+#################################################################
+# system 
+#################################################################
+
+
+#dmenu
+#super + shift + d
+	#dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+
+#reload sxhkd:
+super + shift + s
+    pkill -USR1 -x sxhkd && notify-send "Keybindings Reloaded"
+
+
+super + shift + d
+    killall dunst && notify-send "Dunst Reloaded"
+
+
+#################################################################
+#     SCREENSHOTS
+#################################################################
+
+#Scrot
+Print
+    $HOME/.dwm/scripts/i3-scrot   
+
+#screeenshooter
+super + Print
+  $HOME/.dwm/scripts/i3-scrot -w
+
+#Gnome-Screenshot
+super + shift + Print
+  $HOME/.dwm/scripts/i3-scrot -s
+
+
+
+#################################################################
+#     MULTIMEDIA KEYS
+#################################################################
+
+#Raises volume
+XF86AudioRaiseVolume
+    $HOME/.dwm/scripts/vol.sh +5% 
+
+#Lowers volume
+XF86AudioLowerVolume
+    $HOME/.dwm/scripts/vol.sh -5% 
+ 
+
+#Mute
+XF86AudioMute
+    $HOME/.dwm/scripts/vol.sh mute 
+
+
+
+

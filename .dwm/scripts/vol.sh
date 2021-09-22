@@ -17,3 +17,4 @@ if [ "$ARG" == "mute" ]; then
 else
 	eval "pactl set-sink-volume ${DEF} ${ARG}" && notify-send --hint=string:x-dunst-stack-tag:volume 'Volume:'$(pamixer --get-volume-human)
 fi
+
