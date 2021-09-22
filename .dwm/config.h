@@ -29,12 +29,12 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      											instance    title       tags mask    isfloating   monitor */
-	{ "Lxappearance",  									NULL,       NULL,       0,       		 1,           -1 },
-	{ "Nitrogen",			 									NULL,       NULL,       0,       		 1,           -1 },
-	{ "Pavucontrol",	 								 	NULL,       NULL,       0,       		 1,           -1 },
-	{ "Simple-scan",	 								 	NULL,       NULL,       0,       		 1,           -1 },
-	{ "(?i)System-config-printer.py",	 	NULL,       NULL,       0,       		 1,           -1 },
-	{ "Pavucontrol",	 									NULL,       NULL,       0,       		 1,           -1 },
+	{ "Lxappearance",  			NULL,       NULL,       0,       		 1,           -1 },
+	{ "Nitrogen",			 	NULL,       NULL,       0,       		 1,           -1 },
+	{ "Pavucontrol",	 	        NULL,       NULL,       0,       		 1,           -1 },
+	{ "Simple-scan",	 		NULL,       NULL,       0,       		 1,           -1 },
+	{ "System-config-printer.py",	 	NULL,       NULL,       0,       		 1,           -1 },
+	{ "Pavucontrol",	 		NULL,       NULL,       0,       		 1,           -1 },
 
 };
 
