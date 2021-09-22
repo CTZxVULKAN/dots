@@ -1,0 +1,1 @@
+xbps-install noto-fonts-ttf-extra fonts-droid-ttf dejavu-fonts-ttf ttf-opensans ttf-ubuntu-font-family font-awesome font-Siji nerd-fonts-ttf
