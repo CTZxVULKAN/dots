@@ -31,9 +31,9 @@ super + F7
     leafpad
 
 
-
 super + x
-    rofi -display-drun "" -modi drun -show drun -font "Hack 20" -icon-theme "Tela" -show-icons
+    rofi -display-drun "" -modi drun -show drun -font "Hack 18" -icon-theme "Tela" -show-icons 
+
 
 
 
