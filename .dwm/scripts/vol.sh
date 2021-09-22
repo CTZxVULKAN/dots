@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 ARG=$1
@@ -14,8 +13,7 @@ if [ "$ARG" == "mute" ]; then
 	else
 		notify-send --hint=string:x-dunst-stack-tag:volume  "Muted"
 	fi
-
+	
 else
 	eval "pactl set-sink-volume ${DEF} ${ARG}" && notify-send --hint=string:x-dunst-stack-tag:volume 'Volume:'$(pamixer --get-volume-human)
-
 fi
