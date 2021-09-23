@@ -30,6 +30,14 @@ super + F6
 super + F7
     leafpad
 
+# lockscreen 
+
+# running this for the first time you will have to update the image cache used by betterlockscreen
+# to update the image cache run  
+# betterlockscreen -u /path/to/lockscreen/image.jpg
+super + F12
+    betterlockscreen -l dimblur 
+
 
 super + x
     rofi -display-drun "" -modi drun -show drun -font "Hack 18" -icon-theme "Tela" -show-icons 
