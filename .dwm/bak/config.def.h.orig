@@ -16,23 +16,10 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
-static const char col_socks[]       = "#FC427B"; 
-static const char col_inactive[]    = "#707880"; 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_gray1,  col_cyan  },
-
-	/* color bar patch */
-  /*{text,background,not used but cannot be empty}*/
-
-	[SchemeStatus]  	= { col_gray3, col_gray1,  "#000000"  }, // left most bar which shows dwm-6.2
-	[SchemeTagsSel]  	= { col_socks, col_gray1,  "#000000"  }, // Currently selected tag
-  [SchemeTagsNorm]  = { col_gray3, col_gray1,  "#000000"  }, // Active tags but not in focus & Window mode indicatior ([]= / ><>)
-  [SchemeInfoSel]  	= { col_inactive, col_gray1,  "#000000"  }, // middle bar which shows window info and other stuff when windows are open
-	[SchemeInfoNorm]  = { col_gray3, col_gray1,  "#000000"  }, // middle bar when no window is open
-
-
 };
 
 /* tagging */
