@@ -1,0 +1,73 @@
+#!/bin/bash
+
+interval=0
+
+cpu() {
+  cpu_val=$(grep -o "^[^ ]*" /proc/loadavg)
+
+  printf " CPU: "
+  printf "$cpu_val "
+}
+
+update_icon() {
+  printf ""
+}
+
+pkg_updates() {
+  updates=$(xbps-install -un | wc -l) # void
+  # updates=$(checkupdates | wc -l)   # arch , needs pacman contrib
+  # updates=$(aptitude search '~U' | wc -l)  # apt (ubuntu,debian etc)
+
+  if [ -z "$updates" ]; then
+    printf "Fully Updated"
+  else
+    printf "$updates"" updates"
+  fi
+}
+
+# battery
+#batt() {
+#  printf "^c#81A1C1^  "
+#  printf "^c#81A1C1^ $(acpi | sed "s/,//g" | awk '{if ($3 == "Discharging"){print $4; exit} else {print $4""}}' | tr -d "\n")"
+#}
+
+#brightness() {
+#
+#  backlight() {
+#    backlight="$(xbacklight -get)"
+#    echo -e "$backlight"
+#  }
+#
+#  printf "^c#BF616A^   "
+#  printf "^c#BF616A^%.0f\n" $(backlight)
+#}
+
+mem() {
+  printf " "
+  printf "$(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g)"
+}
+
+wlan() {
+  case "$(cat /sys/class/net/w*/operstate 2>/dev/null)" in
+  up) printf "󰤨 ^d^%s" " Connected" ;;
+  down) printf "^c#3b414d^ ^b#7aa2f7^ 󰤭 ^d^%s" " ^c#7aa2f7^Disconnected" ;;
+  esac
+}
+
+dates() {
+  printf "$(date '+%d/%m/%y') "
+}
+
+clock() {
+  printf "$(date '+%I:%M %p ') "
+}
+
+
+
+while true; do
+
+  [ $interval == 0 ] || [ $(($interval % 3600)) == 0 ] && updates=$(pkg_updates)
+  interval=$((interval + 1))
+
+  sleep 1 && xsetroot -name "$(dates) $(clock)"
+done
