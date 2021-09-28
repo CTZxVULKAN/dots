@@ -19,18 +19,19 @@ static const char col_cyan[]        = "#005577";
 static const char col_socks[]       = "#FC427B"; 
 static const char col_inactive[]    = "#707880"; 
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_gray1,  col_cyan  },
 
-	/* color bar patch */
-  /*{text,background,not used but cannot be empty}*/
+/*               fg         bg         border   */
+[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+[SchemeSel]  = { col_gray4, col_gray1,  col_cyan  },
 
-	[SchemeStatus]  	= { col_gray3, col_gray1,  "#000000"  }, // left most bar which shows dwm-6.2
-	[SchemeTagsSel]  	= { col_socks, col_gray1,  "#000000"  }, // Currently selected tag
-  [SchemeTagsNorm]  = { col_gray3, col_gray1,  "#000000"  }, // Active tags but not in focus & Window mode indicatior ([]= / ><>)
-  [SchemeInfoSel]  	= { col_inactive, col_gray1,  "#000000"  }, // middle bar which shows window info and other stuff when windows are open
-	[SchemeInfoNorm]  = { col_gray3, col_gray1,  "#000000"  }, // middle bar when no window is open
+/* color bar patch */
+/*{text,background,not used but cannot be empty}*/
+
+[SchemeStatus]  	= { col_gray3, col_gray1,  "#000000"  }, // left most bar which shows dwm-6.2
+[SchemeTagsSel]  	= { col_socks, col_gray1,  "#000000"  }, // Currently selected tag
+[SchemeTagsNorm]  = { col_gray3, col_gray1,  "#000000"  }, // Active tags but not in focus & Window mode indicatior ([]= / ><>)
+[SchemeInfoSel]  	= { col_inactive, col_gray1,  "#000000"  }, // middle bar which shows window info and other stuff when windows are open
+[SchemeInfoNorm]  = { col_gray3, col_gray1,  "#000000"  }, // middle bar when no window is open
 
 
 };
@@ -49,13 +50,13 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      											instance    title       tags mask    isfloating   monitor */
-	{ "Lxappearance",  									NULL,       NULL,       0,       		 1,           -1 },
-	{ "Nitrogen",			 									NULL,       NULL,       0,       		 1,           -1 },
-	{ "Pavucontrol",	 								 	NULL,       NULL,       0,       		 1,           -1 },
-	{ "Simple-scan",	 								 	NULL,       NULL,       0,       		 1,           -1 },
+	/* class      						instance    title       tags mask    isfloating   monitor */
+	{ "Lxappearance",  					NULL,       NULL,       0,       		 1,           -1 },
+	{ "Nitrogen",			 			NULL,       NULL,       0,       		 1,           -1 },
+	{ "Pavucontrol",	 				NULL,       NULL,       0,       		 1,           -1 },
+	{ "Simple-scan",	 				NULL,       NULL,       0,       		 1,           -1 },
 	{ "System-config-printer.py",	 			NULL,       NULL,       0,       		 1,           -1 },
-	{ "Pavucontrol",	 									NULL,       NULL,       0,       		 1,           -1 },
+	{ "Pavucontrol",	 				NULL,       NULL,       0,       		 1,           -1 },
 
 };
 
@@ -92,11 +93,11 @@ static const char *filecmd[]  = { "pcmanfm", NULL };
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
-	{ MODKEY,             					XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,             		XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = filecmd } },
 
-	{ MODKEY|ShiftMask|ControlMask, XK_q,      quit,           {0} }, /*clean quit dwm*/
-	{ MODKEY|ShiftMask, 						XK_r,      quit,           {1} },	/*reload dwm*/  
+	{ MODKEY|ShiftMask|ControlMask, XK_q,      quit,           {0} },       /*clean quit dwm*/
+	{ MODKEY|ShiftMask, 		XK_r,      quit,           {1} },	/*reload dwm*/  
 	{ MODKEY|ShiftMask,             XK_q,      killclient,     {0} },	/*close focused application*/
 	
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
@@ -110,8 +111,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 
 	/*{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-		{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
-		{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },*/
+	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
+	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },*/
 	/*{ MODKEY,                       XK_Return, zoom,           {0} },*/
 	
 	{ MODKEY,                       XK_space,  setlayout,      {0} },

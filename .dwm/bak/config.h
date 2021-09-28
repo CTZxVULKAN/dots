@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int gappx     = 10;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
@@ -11,26 +11,39 @@ static const int vertpad            = 6;       /* vertical padding of bar */
 static const int sidepad            = 10;       /* horizontal padding of bar */
 static const char *fonts[]          = { "Ubuntu Regular:size=10","Hack Nerd Font Mono:size=16"};
 static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
-static const char col_socks[]       = "#FC427B"; 
-static const char col_inactive[]    = "#707880"; 
+static const char col_gray1[]       = "#222222"; //black
+static const char col_gray2[]       = "#444444"; //lightblack
+static const char col_gray3[]       = "#bbbbbb"; //white
+static const char col_gray4[]       = "#eeeeee"; // light-grey
+static const char col_cyan[]        = "#005577"; //blue
+
+/*onedark colors*/ 
+
+static const char onedark_bg[]     = "#1e2127"; //black
+static const char onedark_1[]      = "#282C34"; //black
+static const char onedark_2[]      = "#E06C75"; //red
+static const char onedark_3[]      = "#98C379"; //green
+static const char onedark_4[]      = "#E5C70B"; //yellow
+static const char onedark_5[]      = "#61AFEF"; //blue
+static const char onedark_6[]      = "#C678DD"; //violet
+static const char onedark_7[]      = "#56B6C2"; //cyan
+static const char onedark_8[]      = "#ABB2BF"; //white
+static const char col_inactive[]   = "#707880";
+
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_gray1,  col_cyan  },
 
-	/* color bar patch */
-  /*{text,background,not used but cannot be empty}*/
+/*               fg         bg         border   */
+[SchemeNorm] = { onedark_8, onedark_bg, onedark_1 },
+[SchemeSel]  = { onedark_8, onedark_bg, onedark_1  },
 
-	[SchemeStatus]  	= { col_gray3, col_gray1,  "#000000"  }, // left most bar which shows dwm-6.2
-	[SchemeTagsSel]  	= { col_socks, col_gray1,  "#000000"  }, // Currently selected tag
-  [SchemeTagsNorm]  = { col_gray3, col_gray1,  "#000000"  }, // Active tags but not in focus & Window mode indicatior ([]= / ><>)
-  [SchemeInfoSel]  	= { col_inactive, col_gray1,  "#000000"  }, // middle bar which shows window info and other stuff when windows are open
-	[SchemeInfoNorm]  = { col_gray3, col_gray1,  "#000000"  }, // middle bar when no window is open
+/* color bar patch */
+/*{text,background,not used but cannot be empty}*/
+
+[SchemeStatus]    = { onedark_8, onedark_bg,  "#000000"  }, // left most bar which shows dwm-6.2
+[SchemeTagsSel]   = { onedark_2, onedark_bg,  "#000000"  }, // Currently selected tag
+[SchemeTagsNorm]  = { onedark_8, onedark_bg,  "#000000"  }, // Active tags but not in focus & Window mode indicatior ([]= / ><>)
+[SchemeInfoSel]   = { col_inactive, onedark_bg, "#000000"  }, // middle bar which shows window info and other stuff when windows are open
+[SchemeInfoNorm]  = { onedark_8, onedark_bg,  "#000000"  }, // middle bar when no window is open
 
 
 };
@@ -49,13 +62,13 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      											instance    title       tags mask    isfloating   monitor */
-	{ "Lxappearance",  									NULL,       NULL,       0,       		 1,           -1 },
-	{ "Nitrogen",			 									NULL,       NULL,       0,       		 1,           -1 },
-	{ "Pavucontrol",	 								 	NULL,       NULL,       0,       		 1,           -1 },
-	{ "Simple-scan",	 								 	NULL,       NULL,       0,       		 1,           -1 },
+	/* class      						instance    title       tags mask    isfloating   monitor */
+	{ "Lxappearance",  					NULL,       NULL,       0,       		 1,           -1 },
+	{ "Nitrogen",			 			NULL,       NULL,       0,       		 1,           -1 },
+	{ "Pavucontrol",	 				NULL,       NULL,       0,       		 1,           -1 },
+	{ "Simple-scan",	 				NULL,       NULL,       0,       		 1,           -1 },
 	{ "System-config-printer.py",	 			NULL,       NULL,       0,       		 1,           -1 },
-	{ "Pavucontrol",	 									NULL,       NULL,       0,       		 1,           -1 },
+	{ "Pavucontrol",	 				NULL,       NULL,       0,       		 1,           -1 },
 
 };
 
@@ -92,11 +105,11 @@ static const char *filecmd[]  = { "pcmanfm", NULL };
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
-	{ MODKEY,             					XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,             		XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = filecmd } },
 
-	{ MODKEY|ShiftMask|ControlMask, XK_q,      quit,           {0} }, /*clean quit dwm*/
-	{ MODKEY|ShiftMask, 						XK_r,      quit,           {1} },	/*reload dwm*/  
+	{ MODKEY|ShiftMask|ControlMask, XK_q,      quit,           {0} },       /*clean quit dwm*/
+	{ MODKEY|ShiftMask, 		XK_r,      quit,           {1} },	/*reload dwm*/  
 	{ MODKEY|ShiftMask,             XK_q,      killclient,     {0} },	/*close focused application*/
 	
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
@@ -110,8 +123,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 
 	/*{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-		{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
-		{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },*/
+	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
+	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },*/
 	/*{ MODKEY,                       XK_Return, zoom,           {0} },*/
 	
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
@@ -164,11 +177,11 @@ static Key keys[] = {
 	{ MODKEY|ControlMask|ShiftMask, XK_Right,  moveresizeedge, {.v = "R"} },
 
 	/*actual-fullscreen*/
-	{ MODKEY,             					XK_f,      togglefullscr,  {0} },
+	{ MODKEY,            		XK_f,      togglefullscr,  {0} },
 
 	/*fullgaps*/
-	{ MODKEY,             					XK_minus,  setgaps,        {.i = -1 } },
-	{ MODKEY,             					XK_equal,  setgaps,        {.i = +1 } },
+	{ MODKEY,             		XK_minus,  setgaps,        {.i = -1 } },
+	{ MODKEY,             		XK_equal,  setgaps,        {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_BackSpace,  setgaps,    {.i = 0  } },
 
 	/*scratchpad*/
