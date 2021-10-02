@@ -43,34 +43,6 @@ sudo pacman -S kitty rofi dunst xautolock pamixer firefox pcmanfm-gtk3
 yay -S polybar picom-jonaburg-git i3-scrot i3lock-color w3m
 ```
 
-* **Essential fonts**
-
-```
-* noto-fonts
-* ttf-droid
-* ttf-dejavu
-* ttf-opensans 
-* ttf-ubuntu-font-family
-* ttf-windows
-* ttf-roboto-slab
-* ttf-apple-emoji
-* ttf-fira-code
-* siji-git
-* ttf-unifont 
-* ttf-font-awesome
-* nerd-fonts-complete
-```
-
-```html
-sudo pacman -S noto-fonts ttf-droid ttf-dejavu ttf-opensans ttf-ubuntu-font-family ttf-font-awesome
-yay -S ttf-windows ttf-roboto-slab ttf-apple-emoji ttf-fira-code nerd-fonts-complete siji-git ttf-unifont 
-```
-
-* Manual installation of fonts
-
-> Copy the fonts to `~/.local/share/fonts`  & run `fc-cache -f -v` to rebuild your fonts cache.
-
-
 * **Theming**
 
 ```
