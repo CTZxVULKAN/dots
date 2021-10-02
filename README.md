@@ -1,12 +1,23 @@
-# dots 
-A collection of my dot files.
-<br>
+<p align="center" >
+<img src="https://user-images.githubusercontent.com/65299153/135719227-52adf365-d619-4b1f-b5fe-8aa2bbd25c56.png" width="60" />
+</p>
+
+
+<h1 align="center">Dots</h1>
+<p align="center"> A collection of my dot files. </p>
+
+
 
 ![Project Banner](./repo/screenshot2.png)
-![Project Banner 2](./repo/screenshot3.png)
-![Platform](https://img.shields.io/static/v1?label=Distro&message=Artix&style=for-the-badge&logo=linux)
-![Platform](https://img.shields.io/static/v1?label=Init&message=Openrc&style=for-the-badge&logo=fastapi)
-![Platform](https://img.shields.io/static/v1?label=Window-Magager&message=i3-gaps&style=for-the-badge&logo=tmux)
+
+<div align="center">
+ 
+ ![Platform](https://img.shields.io/static/v1?label=Distro&message=Artix/Void&style=for-the-badge&logo=linux)
+ ![Platform](https://img.shields.io/static/v1?label=Init&message=Openrc/Runnit&style=for-the-badge&logo=fastapi)
+ ![Platform](https://img.shields.io/static/v1?label=Window-Magager&message=dwm&style=for-the-badge&logo=tmux)
+ 
+</div>
+
 <br>
 
 ## Dependencies
