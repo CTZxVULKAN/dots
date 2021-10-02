@@ -10,7 +10,7 @@
  
  ![Platform](https://img.shields.io/static/v1?label=Distro&message=Artix/Void&style=for-the-badge&logo=linux)
  ![Platform](https://img.shields.io/static/v1?label=Init&message=Openrc/Runnit&style=for-the-badge&logo=fastapi)
- ![Platform](https://img.shields.io/static/v1?label=Window-Magager&message=dwm&style=for-the-badge&logo=tmux)
+ ![Platform](https://img.shields.io/static/v1?label=Window-Manager&message=dwm&style=for-the-badge&logo=tmux)
  
 </div>
 
