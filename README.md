@@ -6,10 +6,6 @@
 <h1 align="center">Dots</h1>
 <p align="center"> A collection of my dot files. </p>
 
-
-
-![Project Banner](./repo/screenshot2.png)
-
 <div align="center">
  
  ![Platform](https://img.shields.io/static/v1?label=Distro&message=Artix/Void&style=for-the-badge&logo=linux)
@@ -17,6 +13,10 @@
  ![Platform](https://img.shields.io/static/v1?label=Window-Magager&message=dwm&style=for-the-badge&logo=tmux)
  
 </div>
+
+![Project Banner](./repo/screenshot2.png)
+
+
 
 <br>
 
